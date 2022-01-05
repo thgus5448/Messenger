@@ -1,0 +1,16 @@
+@charset "UTF-8";
+* {
+	box-sizing: border-box; 
+}
+#container {
+	width: 848px;
+	height: 445px;
+	padding: 0;
+	margin: 0;
+	background-color: #FAFAFA;
+}
+#innerContainer {
+	width: 577px;
+	height: 520px;
+	padding-top: 24px;
+}

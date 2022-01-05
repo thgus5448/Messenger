@@ -5,12 +5,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
+	
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="./css/teamList.css">
+	
+	<!-- 아이콘 사용을 위한 링크 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-	
-	<link rel="stylesheet" type="text/css" href="./css/teamMain.css">
 </head>
 
 <body>
@@ -18,9 +21,10 @@
 		<div id="container">
 			
 			<div id="inerContainer">
+			
 				<section id="profile">
 					<h3>프로필</h3>
-					<img class="imgUserProfile" src="https://jandi-box.com/assets/ic-profile.png">
+					<img class="userimg" src="https://jandi-box.com/assets/ic-profile.png">
 					<span class="userName">유다현</span>
 					<br>
 					<span class="userEmail">thgus201510573@gmail.com</span>
@@ -33,10 +37,10 @@
 				<section id="teamList">
 					<h3>팀리스트</h3>
 					<div id="teamListBoder">
-						<div id="textbox">
+						<div id="box1">
 							<img class="teamLogo" src="https://jandi-box.com/teams/0/logo.png?timestamp=20190628">
 							<span class="teamName">팀이름1</span>
-							<em class="em1">4</em>
+							<em class="emRed">4</em>
 							<br>
 							<span class="teamHost">teamhost1.gobal.com</span>
 							
@@ -49,7 +53,7 @@
 								</div>
 								
 							<div id="owner">
-								<em class="em2">소유자</em>
+								<em class="emBlue">소유자</em>
 								<span class="owerMail">owner@mail.com</span>
 							</div>
 						</div>

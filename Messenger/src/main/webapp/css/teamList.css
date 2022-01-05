@@ -14,34 +14,35 @@
 	width: 550px;
 	height: 375px;
 	margin: auto;
-	padding: 20px 0 20px 0;
+	padding: 0;
 }
+
+/* profile */
 #profile{
-	padding-bottom: 30px;
+	padding: 20px 0;
 }
 #profile h3{
 	color: #777;
 	font-size: 14px;
 	font-weight: 700;
-	text-indent: 4px;
+	text-indent: 4px; /* 텍스트 앞쪽 여백*/
 	height: 20px;
 }
-#profile .imgUserProfile {
+#profile .userimg {
 	width: 48px;
 	height: 48px;
 	border-radius: 80px;
 	float: left; 
+	margin: 0 10px;
 }
 #profile .userName {
 	color: #333;
 	font-size: 1.3125rem;
-	margin-left: 10px;
 	font-weight: 700;
 }
 #profile .userEmail {
 	color: #999;
 	font-size: .8125rem;
-	margin-left: 10px;
 	font-weight: 600;
 }
 #profile button {
@@ -50,17 +51,19 @@
 	background: none;
 	float: right;
 	color: #999;
+	font-weight: 700;
 }
 
+/* teamList */
 #teamList {
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 #teamListBoder {
-	border: 1px solid #999;
+	border: 1px solid #DCDCDC;
 	border-radius: 3px;
-	background-color: #FAFAFA;
+	background-color: #fff;
 }
-#textbox {
+#box1 {
 	margin: 20px;	
 }
 #teamList h3{
@@ -69,13 +72,11 @@
 	font-weight: 700;
 	text-indent: 4px;
 	height: 10px;
-	
 }
 #teamListBoder .teamLogo {
 	width: 38px;
 	height: 38px;
 	float: left; 
-	
 }
 #teamListBoder .teamName {
 	color: #333;
@@ -92,7 +93,7 @@
 	font-weight: 600;
 	text-decoration: underline;
 }
-#teamListBoder .em1 {
+#teamListBoder .emRed {
 	color: #fff;
     min-width: 1.75rem;
     overflow: hidden;
@@ -108,7 +109,7 @@
     font-size: .8125rem;
     background-color: #e94e24;
 }
-#teamListBoder .em2 {
+#teamListBoder .emBlue {
 	color: #0075b9;
   border-color: #87bddc;
   font-size: 12px;
@@ -125,17 +126,8 @@
   display: inline-block;
   margin-left: 45px;
 }
-#owner {
-	margin-top: 10px;
-}
-#owner .owerMail{
-	line-height: 22px;
-  height: 22px;
-  margin-top: 12px;
-  color: #888;
-  font-weight: 400;
-}
 
+/* btnZone */
 #btnZone {
 	float: right;
 }
@@ -157,6 +149,21 @@
   border: 1px solid #FA8258;
   cursor: pointer;
 }
+ 
+/* owner */
+#owner {
+	margin-top: 10px;
+}
+#owner .owerMail{
+	line-height: 22px;
+  height: 22px;
+  margin-top: 12px;
+  color: #888;
+  font-weight: 400;
+}
+
+
+/* btnTeamCreate */
 #btnTeamCreate .btn1{
 	text-align: center;
   margin-top: .375rem;
