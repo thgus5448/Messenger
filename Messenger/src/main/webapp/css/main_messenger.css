@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:20px;	
+	letter-spacing: -2px;	
+}
+
+
+#main-messenger{
+	padding-top:1px;
+	overflow:hidden;
+}
+
+#main-messenger form{
+	padding-top:20px;
+	margin-top:-20px;
+}
+
+/* 왼쪽 sidebar */
+
+#main-messenger .main-messenger-navLeft{
+	position:fixed;
+	top:0;
+	left:0;
+	width:20%;
+	background:#eee7;
+	height:100%	
+}
+
+/* main-profile */
+
+#main-messenger .main-messenger-navLeft .main-profile{
+	margin:20px;
+	position:relative;
+}
+
+#main-messenger .main-messenger-navLeft .main-profile img{
+	display:inline-block;
+	border:1px solid #eee;
+	border-radius: 50%;
+	width:80px;
+	height:80px;
+}
+
+#main-messenger .main-messenger-navLeft .main-profile .main-profile-irum{
+	position:absolute;
+	top:10px;
+	left:100px;
+	font-size:18px;
+}
+
+#main-messenger .main-messenger-navLeft .main-profile .main-profile-email{
+	position:absolute;
+	top:45px;
+	left:100px;	
+	font-size:18px;
+}
+
+/* chatroom-search */
+
+#main-messenger .main-messenger-navLeft .chatroom-search{
+	text-align: center;
+	margin:30px 0;
+	position:relative;
+}
+
+#main-messenger .main-messenger-navLeft .chatroom-search input{
+	width:90%;
+	border:1px solid #fa8258;
+	padding:5px 10px;
+	border-radius:15px;
+	outline: none;
+	font-size:18px;
+	letter-spacing: -1px;
+}
+
+#main-messenger .main-messenger-navLeft .chatroom-search i{
+	position:absolute;
+	top:10px;
+	right:35px;
+	color:#777;
+}
+
+/* create chatroom */
+
+#main-messenger .main-messenger-navLeft .create-chatroom{
+	margin:20px auto;
+}
+
+#main-messenger .main-messenger-navLeft .create-chatroom span{
+	margin-left:30px;
+	margin-right:100px;
+}
+
+#main-messenger .main-messenger-navLeft .create-chatroom a{
+	display:inline-block;
+	width:50px;
+	text-align: center;
+}
+
+#main-messenger .main-messenger-navLeft .create-chatroom a:hover{
+	cursor: pointer;
+}
+
+
+/* chatroom sort div */
+
+#main-messenger .main-messenger-navLeft .chatroom-sort{
+	margin:30px 0;
+}
+
+#main-messenger .main-messenger-navLeft .chatroom-sort a{
+	margin-left:30px;
+	cursor: pointer;
+}
+
+#main-messenger .main-messenger-navLeft .chatroom-sort .arrow{
+	margin-left:10px;
+	font-size:8px;
+}
+
+#main-messenger .main-messenger-navLeft .chatroom-sort .chatroom-sort-tabs{
+	display:none;
+}
+
+
+/* chatroom lists */
+
+#main-messenger .main-messenger-navLeft .chatroom-lists{
+	margin-top:20px;
+}
+
+#main-messenger .main-messenger-navLeft .chatroom-lists input{
+	display:inline-block;
+	width:100%;
+	font-size:18px;
+	padding:10px;
+	padding-left:60px;
+	cursor: pointer;
+	border:none;
+	background:#eee4;
+	text-align: left;
+	margin-top:3px;
+}
+
+#main-messenger .main-messenger-navLeft .chatroom-lists input:hover{
+	background:#fa8258;
+}
+
+
+
+/* logout */
+
+#main-messenger .main-messenger-navLeft .logout-icon{
+	margin-top:200px;
+	margin-left:50px;
+}
+
+#main-messenger .main-messenger-navLeft .logout-icon i{
+	font-size:35px;
+	transform:rotate(180deg);
+}
+
+#main-messenger .main-messenger-navLeft .logout-icon span{
+	letter-spacing: -1px;
+	font-size:22px;
+	margin-left:10px;
+}
+
+
+/* 오른쪽 sidebar */
+
+
+#main-messenger .main-messenger-navRight{
+	position:fixed;
+	top:0;
+	right:0;
+	width:5%;
+	background:#eee7;
+	height:100%;
+	text-align: center;
+}
+
+#main-messenger .main-messenger-navRight i{
+	margin-top:17px;
+	font-size:25px;
+}
+
+#main-messenger .main-messenger-navRight a{
+	display:inline-block;
+	width:60px;
+	height:60px;
+	background:#fff;
+	border:1px solid #fa8258;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-top:20px;
+}
+
+#main-messenger .main-messenger-navRight a:hover{
+	background:#ddd;
+}
