@@ -17,6 +17,7 @@
 	
 		<div id="container">
 			
+			<div id="inerContainer">
 				<section id="profile">
 					<h3>프로필</h3>
 					<img class="imgUserProfile" src="https://jandi-box.com/assets/ic-profile.png">
@@ -31,25 +32,38 @@
 				
 				<section id="teamList">
 					<h3>팀리스트</h3>
-					<img id="teamLogo" src="https://jandi-box.com/teams/0/logo.png?timestamp=20190628">
-					<span id="teamName">팀이름1</span>
-					<br>
-					<span id="teamHost">teamhost1.gobal.com</span>
-					<br>
-					<span id="teamOwner">소유자</span>
-					<span>thgus201510573@gmail.com</span>
-					<input type="button" id="btnTeamSet" value="팀 관리">
-					<input type="button" id="btnTeamGo" value="팀으로 가기">
+					<div id="teamListBoder">
+						<div id="textbox">
+							<img class="teamLogo" src="https://jandi-box.com/teams/0/logo.png?timestamp=20190628">
+							<span class="teamName">팀이름1</span>
+							<em class="em1">4</em>
+							<br>
+							<span class="teamHost">teamhost1.gobal.com</span>
+							
+							<div id="btnZone">
+									<button type="button" class="btnTeamSet">
+										<i class="fas fa-cog"></i>
+										<span>팀 관리</span>
+									</button>
+									<input type="button" class="btnTeamGo" value="팀으로 가기">	
+								</div>
+								
+							<div id="owner">
+								<em class="em2">소유자</em>
+								<span class="owerMail">owner@mail.com</span>
+							</div>
+						</div>
+					</div>
 				</section>
 				
 				<section id="btnTeamCreate">
-					<button type="button" id="btnTeamCreate">
+					<button type="button" class="btn1">
 						<i class="fas fa-plus"></i>
 						<span>팀 생성하기</span>
 					</button>
 				</section>
 			</div>
-		</div>
+			</div>
 	
 </body>
 </html>
