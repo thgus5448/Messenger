@@ -1,16 +1,5 @@
 @charset "UTF-8";
 
- * {
-	box-sizing: border-box; 
-}
-html {
-	overflow-y: scroll;
-  overflow-x: hidden;
-}
-img {
-	border: 0;
-  vertical-align: top;
-}
 .close-mode {
 	display: block;
 	cursor: pointer;
@@ -35,43 +24,29 @@ img {
 	list-style: none;
 }
 
-#container {
-	opacity: 1;
-	transition: opacity .15s linear;
-	min-width: 550px;
-	padding-top: 60px;
-	display: block;
-	box-sizing: content-box;
-	padding: 0 0 5px;
-	color: #333;
-}
-#sub-container {
+#wrap {
 	padding-top: 24px;
+	display: bor;
+	margin: 0 auto; 
 }
-#innerContainer {
-	padding-top: 24px;
-	display: block;
-	
-}
-#innerContainer header {
+#wrap header {
 	line-height: 18px;
   font-size: 14px;
   color: #777;
   height: 35px;
 }
-#innerContainer header a {
+#wrap header a {
 	text-decoration: none;
 	font-size: .875rem;
 	color: #777; 
 }
-#innerContainer .profileSet {
+#wrap .profileSet {
 	font-weight: 600;
 	color: gray;
 	position: relative;
 }
-#innerContainer article {
+#wrap article {
 	width: 573px;
-	
 	border: 1px solid rgba(0,0,0,.11);
 	box-shadow: 0 3px 10px -2px rgb(0 0 0 / 8%);
   background: #fff;
@@ -79,11 +54,6 @@ img {
   min-height: 240px;
   position: relative;
   display: block;
-}
-#img_profile {
-	width: 48px;
-	height: 48px;
-	border-radius: 100px; 
 }
 dl {
 	position: relative;
@@ -101,27 +71,35 @@ dl {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   border-top-color: transparent;
-  margin-top: 0
+  margin-top: 0;
+  margin-bottom: 0;
 }
 dt{
 	padding-top: 20px;
 	font-size: 1rem;
   font-weight: 700;
   color: #333;
-  padding: 1.5625rem 0 1.5625rem .9375rem;
-  vertical-align: top;
   float: left;
   display: table-cell;
+  vertical-align: top;
+  padding: 1.5625rem 0 1.5625rem .9375rem;
+  vertical-align: top;
 }
 dd{
 	width: 300px;
-	vertical-align: top;
-	padding: 1.375rem 3.75rem .875rem 0;
 	display: table-cell;
 	text-align: left;
 	padding-top: 20px;
   padding-bottom: 24px;
-  width: 300px;
+  position: relative;
+  vertical-align: top;
+}
+.borderNone{
+	border: none;
+}
+.dlHover:hover {
+	background-color: #c0c0c0;
+	cursor: pointer;
 }
 
 .btn-fff {
@@ -130,25 +108,47 @@ dd{
     border: 1px solid #DCDCDC;
     min-width: 2em;
 }
-#btn_profileSet {
-	position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #fff;
-    background-color: rgba(0,0,0,.3);
-    font-size: 14px;
-    font-weight: 700;
-    text-shadow: 0 0 2px rgb(0 0 0 / 50%);
-    opacity: 0;
+
+#profileSet {
+	top: 0;
+  left: 0;
 }
-userFrofile {
+#profileSet img {
+	width: 48px;
+	height: 48px;
+	opacity: 100;
+	border-radius: 100px; 
+	position: relative;
+}
+#profileSet button{
+	left: 0;
+	width: 48px;
+	height: 48px;
+	border-radius: 100px;
+	border: none;
+	color: #ccc;
+	text-shadow: 0 0 2px rgb(0 0 0 / 50%);
+	font-size: 14px;
+  font-weight: 700;
+	text-align: center;
+	background-color: rgba(0,0,0,.3);
+	opacity: 0;
+	vertical-align: top;
 	position: absolute;
-    top: 0;
-    left: 0;
+}
+#profileSet button:hover {
+	opacity: 100;
+	cursor: pointer;
 }
 
+.floatRigt{
+	position: relative;
+	font-size: 10px;
+	color: green;
+	float: right;
+	vertical-align: sub;
+	margin-top: 10px;
+	padding-right: 5px;
+}
 
 

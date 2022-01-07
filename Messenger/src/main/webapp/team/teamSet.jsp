@@ -10,7 +10,7 @@
 	<div id="box1">
 		<header>
 			<a href="#">메신저 메인</a>
-			<a hrdf="#">팀 관리</a>
+			<a href="#">팀 관리</a>
 		</header>
 	</div>
 </body>

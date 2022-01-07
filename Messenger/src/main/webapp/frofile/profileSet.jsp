@@ -6,8 +6,8 @@
 <meta charset="UTF-8">
 	<title>profileSet.jsp</title>
 	
-	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="./css/profileSet.css">
+	<!-- css적용 -->
+	<link rel="stylesheet" type="text/css" href="../css/profileSet.css">
 	
 	<!-- 아이콘 사용을 위한 링크 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -16,8 +16,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-		<div id="container">
-			<div id="innerContainer">
+			<div id="wrap">
 				
 				<header>
 				<span><a class="messengerMain" href="#">메신저 메인</a></span>
@@ -28,9 +27,13 @@
 			  <article>
 			  	<dl>
 			  		<dt>프로필 사진</dt>
+			  		
 			  		<dd>
-			  		 <img id="img_profile" src="https://jandi-box.com/assets/ic-profile.png">
-				  		<button class="btn_profileSet" type="button">수정</button> <!-- 호버 -->
+			  			<div id="profileSet">
+				  			<img src="https://jandi-box.com/assets/ic-profile.png">
+					  		<button type="button">수정</button>
+			  			</div>
+			  			
 					  	<div id="hiddenlist" hidden>
 						  	<ul>
 						  			<li>
@@ -46,11 +49,12 @@
 			  		</dd>
 					</dl>
 					
-					<dl>
+					<dl  class="dlHover">
 			  		<dt>이름</dt>
 			  		<dd>
 			  			<div class="close-mode">
 			  				<span>유다현</span>
+			  				<i class="fas fa-chevron-down floatRigt"></i>
 			  			</div>
 							<div class="open-mode">
 								<input type="text" value="유다현">
@@ -60,12 +64,14 @@
 			  		</dd>
 			  	</dl>	
 			  		
-			  	<dl>	
+			  	<dl class="dlHover">	
 			  		<dt>이메일 관리</dt>
 			  		<dd>
 			  			<div class="close-mode">
 				  			<span>thgus201510573@gmail.com</span>
+				  			<i class="fas fa-chevron-down floatRigt"></i>
 			  			</div>
+			  			
 			  			<div class="open-mode">
 			  				<h5>기본 이메일 주소</h5>
 			  				<p>
@@ -100,12 +106,14 @@
 			  			</div>
 			  	</dl>	
 			  			
-			  	<dl>	
+			  	<dl class="dlHover">	
 			  		<dt>비밀번호 변경하기</dt>
 			  		<dd>
 			  			<div class="close-mode">
 			  				<span>************</span>
+			  				<i class="fas fa-chevron-down floatRigt"></i>
 			  			</div>
+			  			
 			  			<div class="open-mode">
 			  				<h5>현재 비밀번호</h5>
 			  				<input type="password">
@@ -117,7 +125,7 @@
 			  		</dd>
 			  	</dl>
 			  	
-			  	<dl>	
+			  	<dl class="dlHover borderNone">	
 			  		<dt>계정 삭제</dt>
 			  			<dd>
 			  				<div class="close-mode">
@@ -125,7 +133,7 @@
 			  				</div>
 			  				<div class="open-mode">
 			  					<p>메신저 계정을 삭제하면 더 이상 메신저에 남겨진
-			  					메시지 또는 파일에 접을ㅇ할 수 없지만, 현재 팀 멤버들은 
+			  					메시지 또는 파일에 접속할 수 없지만, 현재 팀 멤버들은 
 			  					사용자님이 남긴 메시지 또는 파일에 계속해서 접근할 수 
 			  					있습니다.</p>
 			  					<hr>

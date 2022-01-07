@@ -1,0 +1,114 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+}
+
+#full-screen {
+	box-sizing: border-box;
+	position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  opacity: 1; /* 투명도조절 0-1 */
+  transform: scale(1);
+  background-color: #FAFAFA;
+  transition: all .3s;
+  overflow: auto;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+
+header h2{
+	color: #333;
+	text-align: center;
+	font-weight: 400;
+}
+article label {
+	box-sizing:border-box;
+	font-size: 16px;
+	padding: 5px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #777;
+}
+.typeText1 {
+	border: 1px solid #d2d2d2;
+	border-radius: 4px;
+	font-size: 16px;
+	color: #505050;
+	box-sizing :border-box;
+  height: 2.875rem;
+  width: 56px 100%;
+  padding: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+  display: block;
+  margin-top: 5px;
+}
+.typeText2 {
+	display: table-cell;
+	border: 1px solid #d2d2d2;
+	border-right: none;
+	border-radius: 4px 0 0 4px;
+	font-size: 1rem;
+	color: #505050;
+  height: 2.875rem;
+  width: 56px 100%;
+  padding: 0 .6875rem;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding-right: 0;
+  margin: 0;
+  padding: 0;
+}
+.typeText3 {
+	left: -6px;
+	display: table-cell;
+  width: 150px;
+  border-color: #d2d2d2;
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+  position: relative;
+	margin-left: 0;
+  border-radius: 0 4px 4px 0;
+  height: 2.875rem;
+  line-height: 2.75rem;
+  background: #f1f4f8;
+  text-indent: .625rem;
+  color: #728b98;
+  font-weight: 400;
+  font-size: .875rem;
+  box-sizing: border-box;
+  vertical-align: top;
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+}
+section {
+	padding: 10px;
+}
+#teamCreate{
+	position: relative;
+	vertical-align: top;
+	min-height: 15.625rem;
+  height: calc(100% - 28rem);
+  margin: 0 auto;
+
+}
+button {
+	width: 16.875rem;
+  height: 2.875rem;
+	background-color: rgba(204,204,204,.8);
+  border-color: rgba(204,204,204,.8);
+  color: rgba(255,255,255,.8);
+  cursor: not-allowed;
+  padding: 0 .75rem;
+  margin-left: 35px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: .9375rem;
+  min-width: 2em;
+}
