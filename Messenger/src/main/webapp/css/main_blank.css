@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size:20px;	
+	letter-spacing: -2px;	
+}
+
+#main-blank{
+	margin:400px auto;
+	text-align: center;
+	padding-left:250px;
+}
