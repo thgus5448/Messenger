@@ -24,6 +24,7 @@
 header h2{
 	color: #333;
 	text-align: center;
+	font-weight: 400;
 }
 article label {
 	box-sizing:border-box;
