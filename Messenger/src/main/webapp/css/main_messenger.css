@@ -9,15 +9,12 @@
 	letter-spacing: -2px;	
 }
 
-
 #main-messenger{
-	padding-top:1px;
-	overflow:hidden;
+
 }
 
-#main-messenger form{
-	padding-top:20px;
-	margin-top:-20px;
+section{
+	z-index:-5;
 }
 
 /* 왼쪽 sidebar */
@@ -31,6 +28,9 @@
 	height:100%	
 }
 
+
+
+
 /* main-profile */
 
 #main-messenger .main-messenger-navLeft .main-profile{
@@ -38,12 +38,13 @@
 	position:relative;
 }
 
-#main-messenger .main-messenger-navLeft .main-profile img{
+#main-messenger .main-messenger-navLeft .main-profile .main-img{
 	display:inline-block;
 	border:1px solid #eee;
 	border-radius: 50%;
 	width:80px;
 	height:80px;
+	cursor:pointer;
 }
 
 #main-messenger .main-messenger-navLeft .main-profile .main-profile-irum{
@@ -60,6 +61,83 @@
 	font-size:18px;
 }
 
+
+
+
+/* 프로필 창 */
+
+#main-messenger .main-messenger-profile{
+	position:absolute;
+	top:0px;
+	left:300px;
+	border:1px solid #eee;
+	border-radius: 20px;
+	width:300px;
+	display:none;
+	z-index:20;
+}
+
+#main-messenger .main-messenger-profile .main-messenger-profile-imgBox{
+	background-image:url('../img/default_profile.png');
+	background-size:100%;
+	border-radius: 20px 20px 0 0;
+	width:100%;
+}
+
+#main-messenger .main-messenger-profile input[type="file"]{
+	display:inline-block;
+	opacity:0;
+	width:100%;
+	height:220px;
+}
+
+#main-messenger .main-messenger-profile input[type="text"]{
+	padding:5px 11px;
+	outline: none;
+	border:none;
+	border-bottom:1px solid #eee;
+	width:100%;
+	display:inline-block;
+}
+
+#main-messenger .main-messenger-profile input[type="text"]:hover{
+	background:#E6F3FF;	
+}
+
+#main-messenger .main-messenger-profile .main-profile-btns{
+	border-radius: 0 0 20px 20px;
+	padding:10px 0;
+	background:#fff;
+	border:0px solid #eee;
+	text-align: center;
+}
+
+#main-messenger .main-messenger-profile .main-profile-btns input{
+	cursor: pointer;
+	border:1px solid #fa8258;
+	border-radius:7px;
+	background:#eee8;
+	padding:0 8px;
+	margin:0 10px;
+}
+
+#main-messenger .main-messenger-profile .main-profile-btns input:hover{
+	background:#fff;
+}
+
+#main-messenger .main-messenger-profile .profile-status-select{
+	display:inline-block;
+	width:100%;
+	padding:5px 8px;
+	outline: none;
+	border:none;
+	border-bottom:1px solid #eee;
+}
+
+#main-messenger .main-messenger-profile .profile-status-select:hover{
+	background:#E6F3FF;
+}
+
 /* chatroom-search */
 
 #main-messenger .main-messenger-navLeft .chatroom-search{
@@ -71,7 +149,7 @@
 #main-messenger .main-messenger-navLeft .chatroom-search input{
 	width:90%;
 	border:1px solid #fa8258;
-	padding:5px 10px;
+	padding:5px 14px;
 	border-radius:15px;
 	outline: none;
 	font-size:18px;
@@ -82,8 +160,23 @@
 	position:absolute;
 	top:10px;
 	right:35px;
-	color:#777;
+	color:#333;
+	opacity:0.5;
+	pointer-events:none;	
 }
+
+#main-messenger .main-messenger-navLeft .chatroom-search i:hover{
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
 
 /* create chatroom */
 
@@ -92,6 +185,7 @@
 }
 
 #main-messenger .main-messenger-navLeft .create-chatroom span{
+	display:inline-block;
 	margin-left:30px;
 	margin-right:100px;
 }
@@ -110,6 +204,7 @@
 /* chatroom sort div */
 
 #main-messenger .main-messenger-navLeft .chatroom-sort{
+	position:relative;
 	margin:30px 0;
 }
 
@@ -121,29 +216,51 @@
 #main-messenger .main-messenger-navLeft .chatroom-sort .arrow{
 	margin-left:10px;
 	font-size:8px;
+	display:inline-block;
 }
 
 #main-messenger .main-messenger-navLeft .chatroom-sort .chatroom-sort-tabs{
+	position:absolute;
+	top:3px;
+	left:150px;
 	display:none;
+	border:1px solid #777;
+	list-style: none;
+	background:#fff;
+	z-index:5;
 }
+
+#main-messenger .main-messenger-navLeft .chatroom-sort .chatroom-sort-tabs li{
+	padding:5px 10px;
+	text-align:center;
+}
+
+#main-messenger .main-messenger-navLeft .chatroom-sort .chatroom-sort-tabs li:hover{
+	cursor:pointer;
+	background:#fa8258;
+}
+
 
 
 /* chatroom lists */
 
 #main-messenger .main-messenger-navLeft .chatroom-lists{
+	position:relative;
 	margin-top:20px;
+	max-height: 350px;
+	overflow-y:auto;
 }
 
 #main-messenger .main-messenger-navLeft .chatroom-lists input{
 	display:inline-block;
-	width:100%;
 	font-size:18px;
 	padding:10px;
 	padding-left:60px;
 	cursor: pointer;
 	border:none;
-	background:#eee4;
+	background:#eee6;
 	text-align: left;
+	width:100%;
 	margin-top:3px;
 }
 
@@ -151,18 +268,18 @@
 	background:#fa8258;
 }
 
-
-
 /* logout */
 
 #main-messenger .main-messenger-navLeft .logout-icon{
-	margin-top:200px;
-	margin-left:50px;
+	position:absolute;
+	bottom:100px;
+	left:65px;
 }
 
 #main-messenger .main-messenger-navLeft .logout-icon i{
 	font-size:35px;
 	transform:rotate(180deg);
+	cursor:pointer;
 }
 
 #main-messenger .main-messenger-navLeft .logout-icon span{
@@ -203,4 +320,244 @@
 
 #main-messenger .main-messenger-navRight a:hover{
 	background:#ddd;
+}
+
+
+/* hamberger */
+
+#main-messenger .menu-trigger,
+.menu-trigger span {
+	display: inline-block;
+	transition: all .4s;
+	box-sizing: border-box;
+}
+
+#main-messenger .menu-trigger{
+	position: relative;
+	width: 50px;
+	height: 44px;
+	border:1px solid;
+/* 	opacity: 0.2; */
+}
+
+#main-messenger .menu-trigger span {
+	position : absolute;
+	left: 12px;
+	width:60%;
+	height:3px;
+	background-color: #000;
+	border-radius: 3px;
+}
+
+#main-messenger .menu-trigger span:nth-of-type(1){
+	top:17px;
+}
+
+#main-messenger .menu-trigger span:nth-of-type(2){
+	top:27px;
+}
+
+#main-messenger .menu-trigger span:nth-of-type(3){
+	top:37px;
+}
+
+#main-messenger .menu-trigger.active span:nth-of-type(1){
+	transform : translateY(10px) rotate(-45deg);
+}
+
+#main-messenger .menu-trigger.active span:nth-of-type(2){
+	opacity:0;
+}
+
+#main-messenger .menu-trigger.active span:nth-of-type(3){
+	transform : translateY(-10px) rotate(45deg);
+}
+
+
+
+/* bubble */
+
+#main-messenger .bubble-box{
+	position:fixed;
+	top:65px;
+	right:110px;
+	z-index:-999;
+	display:none;
+}
+
+#main-messenger .bubble-box li{
+	margin-top:43px;
+	border-radius: 13px;
+	padding:5px 8px;
+	background:#fa823940;
+	list-style: none;
+	visibility: hidden;
+}
+
+
+
+
+
+
+/* modal */
+
+
+.main-messenger-modal-black{
+	position:fixed;
+	top:0px;
+	right:0px;
+	background:rgba(0,0,0,0.3);
+	z-index:3;	
+	height:880px;
+	width:100%;
+	display:none;
+	padding:0 1px;
+}
+
+
+		/* 채팅방 개설 화이트 모달 */
+
+.main-messenger-create-modal-white{
+ 	background:#fff;
+ 	width:30%;
+ 	margin:200px 700px;
+ 	padding:20px 40px;
+ 	border:1px solid #fa8258;
+ 	border-radius:20px;
+	max-height: 700px;
+	text-align: center;
+	display:none;
+}
+
+.main-messenger-modal-black .main-modal-header{
+	display:flex;
+	justify-content: space-between;
+	margin-top:5px;
+}
+
+.main-messenger-modal-black .main-modal-header span{
+	font-size:23px;
+	display:inline-block;
+	width:30px;
+	text-align: right;
+	padding-right:10px;
+}
+
+.main-messenger-modal-black .main-modal-header span:hover{
+	cursor: pointer;
+}
+
+.main-messenger-modal-black .main-modal-title{
+	margin-top:50px;
+	display:flex;
+	justify-content: space-between;
+}
+
+.main-messenger-modal-black .main-modal-title input{
+	display:inline-block;
+	width:80%;
+	outline: none;
+	border-radius: 10px;
+	border:1px solid #aaa;
+	padding:5px 10px;
+}
+
+.main-messenger-modal-black .main-modal-disclose{
+	margin-top:40px;
+	text-align: left;
+}
+
+.main-messenger-modal-black .main-modal-disclose span{
+	display:inline-block;
+	margin-right:35px;
+}
+
+.main-messenger-modal-black .main-modal-disclose .main-modal-disclose-radios{
+	display: inline-block;
+}
+
+.main-messenger-modal-black .main-modal-disclose input[type="radio"]{
+	margin-left:15px;
+	margin-right:20px;
+}
+
+.main-messenger-modal-black p{
+	font-size:17px;
+	color:#666;
+	letter-spacing: -1px;
+	text-align: left;
+	margin-top:14px;
+}
+
+.main-messenger-modal-black .main-modal-btns{
+	margin-top:50px;
+	margin-bottom:20px;
+}
+
+.main-messenger-modal-black .main-modal-btns input{
+	margin-right:10px;
+	padding:5px 10px;
+	border-radius: 7px;
+	border:1px solid #fa8258;
+}
+
+.main-messenger-modal-black .main-modal-btns input:hover{
+	background:#fff;
+	cursor: pointer;
+}
+
+.main-messenger-modal-black .main-modal-btns .modal-btn-create{
+	opacity:0.5;
+}
+
+		/* 채팅방 변경 화이트 모달 */
+
+.main-messenger-change-modal-white{
+ 	background:#fff;
+ 	width:30%;
+ 	margin:200px 700px;
+ 	padding:20px 40px;
+ 	border:1px solid #fa8258;
+ 	border-radius:20px;
+	max-height: 700px;
+	text-align: center;
+	display:none;
+}
+
+
+
+
+
+
+/* 채팅방 컨트롤 메뉴 트랜스폼 */
+
+.chatroom-manage-box{
+	position:absolute;
+	top:0px;
+	right:95px;
+	border:1px solid #ccc;
+	padding:5px;
+	border-right:none;
+	z-index:5;
+	transition:all 0.7s;
+	display:none;
+	background:#fff;
+}
+
+.chatroom-manage-box.active2{
+	display:inline-block;
+}
+
+.chatroom-manage-box input{
+	display: inline-block;
+	width:180px;
+	text-align: center;
+	padding:5px 10px;
+	background:#fff;
+	border:none;
+	cursor: pointer;
+}
+
+.chatroom-manage-box input:hover{
+	background:#fa8258;
 }
