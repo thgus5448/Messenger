@@ -33,7 +33,7 @@
 				  			<img src="https://jandi-box.com/assets/ic-profile.png">
 					  		<button type="button">수정</button>
 			  			</div>
-			  		
+			  			
 					  	<div id="hiddenlist" hidden>
 						  	<ul>
 						  			<li>
@@ -54,6 +54,7 @@
 			  		<dd>
 			  			<div class="close-mode">
 			  				<span>유다현</span>
+			  				<i class="fas fa-chevron-down floatRigt"></i>
 			  			</div>
 							<div class="open-mode">
 								<input type="text" value="유다현">
@@ -63,12 +64,14 @@
 			  		</dd>
 			  	</dl>	
 			  		
-			  	<dl  class="dlHover">	
+			  	<dl class="dlHover">	
 			  		<dt>이메일 관리</dt>
 			  		<dd>
 			  			<div class="close-mode">
 				  			<span>thgus201510573@gmail.com</span>
+				  			<i class="fas fa-chevron-down floatRigt"></i>
 			  			</div>
+			  			
 			  			<div class="open-mode">
 			  				<h5>기본 이메일 주소</h5>
 			  				<p>
@@ -108,7 +111,9 @@
 			  		<dd>
 			  			<div class="close-mode">
 			  				<span>************</span>
+			  				<i class="fas fa-chevron-down floatRigt"></i>
 			  			</div>
+			  			
 			  			<div class="open-mode">
 			  				<h5>현재 비밀번호</h5>
 			  				<input type="password">

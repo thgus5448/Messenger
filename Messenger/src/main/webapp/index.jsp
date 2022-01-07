@@ -10,7 +10,7 @@
 <%
 	request.setCharacterEncoding("utf-8");
 
-	String sub="teamList.jsp";
+	String sub="./team/teamList.jsp";
 	if( request.getParameter("sub") != null) {
 		sub = request.getParameter("sub");
 	}

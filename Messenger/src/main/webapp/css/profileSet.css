@@ -99,6 +99,7 @@ dd{
 }
 .dlHover:hover {
 	background-color: #c0c0c0;
+	cursor: pointer;
 }
 
 .btn-fff {
@@ -137,7 +138,17 @@ dd{
 }
 #profileSet button:hover {
 	opacity: 100;
+	cursor: pointer;
 }
 
+.floatRigt{
+	position: relative;
+	font-size: 10px;
+	color: green;
+	float: right;
+	vertical-align: sub;
+	margin-top: 10px;
+	padding-right: 5px;
+}
 
 
