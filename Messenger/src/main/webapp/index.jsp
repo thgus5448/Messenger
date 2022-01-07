@@ -20,13 +20,11 @@
 		
 		<!-- header -->
 		
-		<!-- sideBar_Left -->
+		<!-- sideBar -->
 		
 		<section>
 			<jsp:include page="<%=sub %>" />		
 		</section>
-		
-		<!-- sideBar_right -->
 		
 		<!-- footer -->
 		
