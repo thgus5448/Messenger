@@ -28,57 +28,60 @@ request.setAttribute("mainPage", mainPage);
 
 	<form name="frm_teamList" method="post" action="../team/teamList.jsp">	
 		
-		<!-- 가운데정렬 컨테이너 -->
-		<div id="Contaner_MaginAuto">	
-			
-			<!-- 프로필 -->
-			<div id="profile">
-				<h3>프로필</h3>		
-					<img class="userimg" src="https://jandi-box.com/assets/ic-profile.png">
-					<span class="userName">유다현</span>	
-					<br>	
-					<span class="userEmail">thgus201510573@gmail.com</span>	
-					<button type="button" id="btnProfileSet">	
-						<i class="fas fa-pen"></i>	
-						<span>프로필 설정</span>	
-					</button>	
-			</div>		
-							
+		<!-- 백그라운드 -->
+		<div id="container">
+		
+			<!-- 가운데정렬과 크기지정 컨테이너 -->
+			<div id="container-inner">	
+				
+				<!-- 프로필 -->
+				<div id="profile">
+					<h3>프로필</h3>		
+						<img class="userimg" src="https://jandi-box.com/assets/ic-profile.png">
+						<span class="userName">유다현</span>	
+						<br>	
+						<span class="userEmail">thgus201510573@gmail.com</span>	
+						<button type="button" id="btnProfileSet">	
+							<i class="fas fa-pen"></i>	
+							<span>프로필 설정</span>	
+						</button>	
+				</div>		
 								
-			<!-- 팀리스트 -->		
-			<div id="teamList">
-				<h3>팀리스트</h3>
-				<div id="teamListBoder">
-							<div id="box1">
-								<img class="teamLogo" src="https://jandi-box.com/teams/0/logo.png?timestamp=20190628">
-								<span class="teamName">팀이름1</span>
-								<em class="emRed">4</em>
-								<br>
-								<div class="teamHost"><span>teamhost1.gobal.com</span></div>
-								
-								<!-- 버튼존 -->
-								<div id="btnZone">
-										<button type="button" class="btnTeamSet">
-											<i class="fas fa-cog"></i>
-											<span>팀 관리</span>
-										</button>
-										<button type="button" class="btnTeamGo" >팀으로 가기</button>
-								</div>
 									
-								<div id="owner">
-									<em class="emBlue">소유자</em>
-									<span class="owerMail">owner@mail.com</span>
+				<!-- 팀리스트 -->		
+				<div id="teamList">
+					<h3>팀리스트</h3>
+					<div id="teamListBoder">
+								<div id="box1">
+									<img class="teamLogo" src="https://jandi-box.com/teams/0/logo.png?timestamp=20190628">
+									<span class="teamName">팀이름1</span>
+									<em class="emRed">4</em>
+									<br>
+									<div class="teamHost"><span>teamhost1.gobal.com</span></div>
+									
+									<!-- 버튼존 -->
+									<div id="btnZone">
+											<button type="button" class="btnTeamSet">
+												<i class="fas fa-cog"></i>
+												<span>팀 관리</span>
+											</button>
+											<button type="button" class="btnTeamGo" >팀으로 가기</button>
+									</div>
+										
+									<div id="owner">
+										<em class="emBlue">소유자</em>
+										<span class="owerMail">owner@mail.com</span>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>		
-							
-					
-			<!-- 팀 생성 -->
-			<div id="TeamCreate">
-				<button type="button" class="btn_TeamCreate"><i class="fas fa-plus"></i>팀 생성하기</button>
-			</div>		
-					
+						</div>		
+								
+						
+				<!-- 팀 생성 -->
+				<div id="TeamCreate">
+					<button type="button" class="btn_TeamCreate"><i class="fas fa-plus"></i>팀 생성하기</button>
+				</div>		
+			</div>			
 		</div>	
 	</form>	
 </div>	
