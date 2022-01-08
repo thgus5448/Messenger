@@ -126,7 +126,7 @@ request.setAttribute("mainPage", mainPage);
 			</ul>
 
 			<a class="main-right-icons"><i class="fas fa-search"></i></a><br/>
-			<a class="main-right-icons"><i class="fas fa-vote-yea"></i></a><br/>
+			<a class="main-right-icons"><i class="fas fa-vote-yea"></i></a><br/> 
 			<a class="main-right-icons"><i class="far fa-calendar"></i></a><br/>
 			<a class="main-right-icons"><i class="far fa-list-alt"></i></a><br/>
 			<a class="main-right-icons"><i class="fas fa-users"></i></a><br/>
