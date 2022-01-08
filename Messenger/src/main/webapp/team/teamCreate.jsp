@@ -35,14 +35,14 @@
 					<section>
 						<label>팀 이름</label>
 						<br>
-						<input type="text" class="teamCreate-typeText1" placeholder="팀 이름" autofocus="autofocus">
+						<input type="text" class="teamCreate-teamName" placeholder="팀 이름" value="" autofocus="autofocus">
 					</section>
 					<!-- 팀 도메인 -->
 					<section>
 						<label>팀 도메인</label>
 						<br>
 						<div id="TeamdomainInlineBlock">
-							<input type="text" class="teamCreate-typeText2" placeholder="팀 도메인">
+							<input type="text" class="teamCreate-teamDomain" placeholder="팀 도메인" value="">
 							<div class="typeText3">.Messenger.com</div>
 						</div>
 					</section>
