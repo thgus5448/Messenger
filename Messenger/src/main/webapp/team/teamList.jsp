@@ -4,7 +4,10 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Insert title here</title>
+	<title>teamList.jsp</title>
+	<!-- 스크립트 적용 -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>	
+	<script src='../js/teamList.js'></script>
 	<!-- css적용 -->
 	<link rel="stylesheet" type="text/css" href="../css/teamList.css">
 	<!-- 아이콘 사용을 위한 링크 -->
@@ -12,38 +15,16 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
-	<!-- 스크립트 연결 (다현님 아래 jquery cdn(17줄) 추가하세요 다른 것도 / 18줄에 ../js 로 시작하세요 ) -->
-	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>	
-	<script src='../js/teamList.js'></script>
 </head>
 
 <body>
-<!--  
-밑에 이거 필요 없어요 여기서는
-<%-- <%
-String mainPage = (request.getParameter("page") == null) ? "main_blank.jsp" : request.getParameter("page");	
-request.setAttribute("mainPage", mainPage);
-%> --%>
--->
+<!-- <<<<<<< HEAD  -->
 
-<<<<<<< HEAD
 <div id="teamList">	
 		<!-- 가운데정렬과 크기지정 컨테이너 -->
 		<div id="container">	
-			<form name="frm_teamList" method="post" action="../team/teamList.jsp">
-=======
-<div id="teamList">
-	<!-- form에 아이디값 집어넣으세요 -->	
-	<form name="frm_teamList" method="post" id="frm_teamList" action="">	
-		
-		<!-- 백그라운드 -->
-		<div id="container">
-		
-			<!-- 가운데정렬과 크기지정 컨테이너 -->
-			<div id="container-inner">	
-				
->>>>>>> branch 'main' of https://github.com/thgus5448/Messenger.git
+			<form id="frm_teamList" method="post" action="">
+
 				<!-- 프로필 -->
 				<div id="profile">
 					<h3>프로필</h3>		
@@ -91,8 +72,10 @@ request.setAttribute("mainPage", mainPage);
 				<div id="teamCreate">
 					<button type="button" class="btn-teamCreate"><i class="fas fa-plus"></i>팀 생성하기</button>
 				</div>		
+
 			</form>	
 		</div>				
-	</div>		
+	</div>
+			
 </body>
 </html>

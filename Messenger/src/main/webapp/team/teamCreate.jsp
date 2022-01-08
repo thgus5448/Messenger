@@ -7,7 +7,8 @@
 <title>teamCreate.jsp</title>
 
 <!-- 스크립트 연결 -->
-	<script src='./js/teamList.js'></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>	
+	<script src='../js/teamList.js'></script>	
 <!-- css연결 -->
 	<link rel="stylesheet" type="text/css" href="../css/teamCreate.css"> 
 <!-- 아이콘 사용을 위한 링크 -->

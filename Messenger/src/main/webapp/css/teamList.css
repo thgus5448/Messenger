@@ -9,13 +9,12 @@ img {
 }
 #container {
 	width: 550px;
-	height: 375px;
+	height: auto;
 	margin: 0 auto;
 	padding: 10px;
-	background-color: #ccc;
+	background-color: #FAFAFA;
 	
 }
-
 /* profile */
 #profile{
 	padding: 20px 0;

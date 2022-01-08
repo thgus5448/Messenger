@@ -5,9 +5,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>teamSet.jsp</title>
+	<!-- 스크립트 적용 -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>	
+	<script src='../js/teamList.js'></script>
 	<!-- css적용 -->
 	<link rel="stylesheet" type="text/css" href="../css/teamSet.css"> 
-	
 	<!-- 아이콘 사용을 위한 링크 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
