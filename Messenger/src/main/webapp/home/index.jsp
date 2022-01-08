@@ -47,7 +47,7 @@ request.setAttribute("email", email);
 				<a href="#" class="nav-admin">관리자</a>
 				<a href="#" class="nav-download">다운로드</a>
 				<c:choose>
-					<c:when test="${email eq null}">
+					<c:when test="${email eq ''}">
 						<a href="index.jsp?sub=../login/login.jsp" class="nav-login">로그인</a>
 					</c:when>
 					<c:otherwise>
