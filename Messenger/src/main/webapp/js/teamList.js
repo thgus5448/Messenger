@@ -8,26 +8,26 @@ $(function(){
 	//프로필설정 버튼 클릭 ( 지금 이거(9줄~13줄)를 고쳤어요 이런 구조로 해야해요.)
 	$("#btnProfileSet").click(()=>{
 		$frm = $('#frm_teamList')[0];
-		$frm.action = "./profile/profileSet.jsp";
+		$frm.action = "profileSet.jsp";
 		$frm.submit();
 	})
 	
 	//팀관리버튼 클릭
 	$(".btnTeamSet").click( ()=>{
 		$frm = $("frm_teamList")[0];
-		$frm.action = "./team/teamSet.js";
+		$frm.action = "teamSet.js";
 	})
 	
 	//팀으로 가기 버튼 클릭
 	$(".btnTeamGo").click( ()=> {
 		$frm = $("frm_teamList")[0];
-		$frm.action = "./team/main_messenger";
+		$frm.action = "main_messenger";
 	})
 	
 	//팀 생성버튼 클릭
 	$(".btn_TeamCreate").click(()=>{
 		$frm = $("frm_teamList")[0];
-		$frm.action = "./team/teamCreate"
+		$frm.action = "teamCreate"
 	})
 
 })

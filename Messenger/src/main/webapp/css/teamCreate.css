@@ -25,7 +25,7 @@
   font-weight: 700;
   color: #777;
 }
-.typeText1 {
+.teamCreate-typeText1 {
 	border: 1px solid #d2d2d2;
 	border-radius: 4px;
 	font-size: 16px;
@@ -39,7 +39,7 @@
   margin-top: 5px;
   width: 100%;
 }
-.typeText2 {
+.teamCreate-typeText2 {
 	border: 1px solid #d2d2d2;
 	border-right: none;
 	border-radius: 4px 0 0 4px;
@@ -75,7 +75,7 @@
 section {
 	padding: 10px 0;
 }
-#btn_Goteam button {
+#btn_goteam {
 	width: 16.875rem;
   height: 2.875rem;
 	background-color: rgba(204,204,204,.8);
@@ -88,7 +88,5 @@ section {
   border-radius: 3px;
   font-weight: 700;
   font-size: .9375rem; 
-}
-#btn_Goteam{
-	margin: auto;
+  margin: auto;
 }

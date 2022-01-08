@@ -32,7 +32,7 @@
 					<span class="userName">유다현</span>	
 					<br>	
 					<span class="userEmail">thgus201510573@gmail.com</span>	
-					<button type="button" id="btn-ProfileSet">
+					<button type="button" id="btn-profileSet">
 						<i class="fas fa-pen"></i>	
 						<span>프로필 설정</span>	<!-- 여기에다 class명이나 id명 집어넣어야 해요 -->
 					</button>	
@@ -45,10 +45,13 @@
 					<div id="teamListBoder">
 						<div id="box1">
 							<img class="teamLogo" src="https://jandi-box.com/teams/0/logo.png?timestamp=20190628">
-							<span class="teamName">팀이름1</span>
-							<em class="emRed">4</em>
-							<br>
-							<div class="teamHost"><span>teamhost1.gobal.com</span></div>
+							<div class="teamNameAndHose">
+								<span class="teamName">팀이름1</span>
+								<em class="emRed">4</em>
+								<br>
+								<div class="teamHost"><span>teamhost1.gobal.com</span></div>
+							</div>
+							
 							
 							<!-- 버튼존 -->
 							<div id="btnZone">
