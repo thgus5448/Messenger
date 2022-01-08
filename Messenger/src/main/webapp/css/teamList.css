@@ -7,18 +7,12 @@ img {
 	border: 0;
   vertical-align: top;
 }
-
 #container {
-	padding: 0;
-	margin: 0;
-	background-color: #FAFAFA;
-	color: #333;
-}
-#container-inner {
 	width: 550px;
 	height: 375px;
-	margin: auto;
+	margin: 0 auto;
 	padding: 10px;
+	background-color: #ccc;
 	
 }
 
@@ -169,7 +163,7 @@ btnProfileSet {
 
 
 /* btnTeamCreate */
-#TeamCreate .btn_TeamCreate{
+#teamCreate .btn-teamCreate{
 	text-align: center;
   margin-top: .375rem;
   background-color: rgba(0,0,0,.05);

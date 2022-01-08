@@ -25,15 +25,9 @@ request.setAttribute("mainPage", mainPage);
 %>
 
 <div id="teamList">	
-
-	<form name="frm_teamList" method="post" action="../team/teamList.jsp">	
-		
-		<!-- 백그라운드 -->
-		<div id="container">
-		
-			<!-- 가운데정렬과 크기지정 컨테이너dd -->
-			<div id="container-inner">	
-				
+		<!-- 가운데정렬과 크기지정 컨테이너 -->
+		<div id="container">	
+			<form name="frm_teamList" method="post" action="../team/teamList.jsp">
 				<!-- 프로필 -->
 				<div id="profile">
 					<h3>프로필</h3>		
@@ -78,15 +72,11 @@ request.setAttribute("mainPage", mainPage);
 								
 						
 				<!-- 팀 생성 -->
-				<div id="TeamCreate">
-					<button type="button" class="btn_TeamCreate"><i class="fas fa-plus"></i>팀 생성하기</button>
+				<div id="teamCreate">
+					<button type="button" class="btn-teamCreate"><i class="fas fa-plus"></i>팀 생성하기</button>
 				</div>		
-			</div>			
-		</div>	
-	</form>	
-</div>	
-	
-	
-
+			</form>	
+		</div>				
+	</div>		
 </body>
 </html>
