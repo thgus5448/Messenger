@@ -212,7 +212,7 @@ request.setAttribute("mainPage", mainPage);
 
 <!-- 투표 아이콘을 클릭했을 때 활성화-->
 <div id="poll-list-box" class="poll-list-box">
-		 
+
 </div>
 
 </div>	
