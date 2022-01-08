@@ -156,7 +156,7 @@ $(function(){
 			$('.chatroom-manage-box').removeClass('active2');			
 			$('.main-profile-btnCancel').click();
 		} 
-	});
+	}); 
 	
 	/* 채팅방 정렬 */
 	
