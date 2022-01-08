@@ -1,6 +1,7 @@
 /**
  *  2022.01.05 main page
  *  건홍
+ *	2022.01.07 투표 js(예람)
  */
 
 
@@ -13,6 +14,12 @@ $(function(){
 			$('.chatroom-manage-box').toggleClass('active2');
 		});
 		
+		/* 투표버튼 클릭으로 사이드바 생성 및 투표리스트(pollList.jsp) 열기 */
+	
+		$('.poll-trigger').click(()=>{
+			$('#poll-list-box').toggleClass('active3');
+			$("#poll-list-box").load("pollList.jsp");
+		});
 		
 		/* 프로필 프로필 설정 페이지 */
 		
@@ -149,7 +156,7 @@ $(function(){
 			$('.chatroom-manage-box').removeClass('active2');			
 			$('.main-profile-btnCancel').click();
 		} 
-	});
+	});  
 	
 	/* 채팅방 정렬 */
 	
@@ -171,23 +178,41 @@ $(function(){
 		})
 		
 	/* 기능별 mouseover */
-	
-	for(let i=0; i<6; i++){
-	
+		$('.main-right-icons').eq(0).mouseover(() => {
+			$('.bubble-box').css({ 'display': 'inline-block' });
+			$('.bubble-info').eq(0).css({ 'visibility': 'visible' });
+		})
+		
+		$('.main-right-icons').eq(0).mouseout(() => {
+			$('.bubble-box').css({ 'display': 'none' });
+			$('.bubble-info').eq(0).css({ 'visibility': 'hidden' });
+		})
+		
+		$('.poll-trigger').mouseover(() => {
+			$('.bubble-box').css({ 'display': 'inline-block' });
+			$('.bubble-info').eq(1).css({ 'visibility': 'visible' });
+		})
+		
+		$('.poll-trigger').mouseout(() => {
+			$('.bubble-box').css({ 'display': 'none' });
+			$('.bubble-info').eq(1).css({ 'visibility': 'hidden' });
+		})
+		
+	for(let i=1; i<5; i++){
 		$('.main-right-icons').eq(i).mouseover(()=>{
 			$('.bubble-box').css({'display':'inline-block'});
-			$('.bubble-info').eq(i).css({'visibility':'visible'});
+			$('.bubble-info').eq(i+1).css({'visibility':'visible'});
 		})
 		
 		$('.main-right-icons').eq(i).mouseout(()=>{
 			$('.bubble-box').css({'display':'none'});
-			$('.bubble-info').eq(i).css({'visibility':'hidden'});
+			$('.bubble-info').eq(i+1).css({'visibility':'hidden'});
 		})
 	}
 	
 	/* 기능별 toggle */
 	let url = "main_messenger.jsp?page=./";
-	let pages = ["main_search.jsp", "투표", "일정", "게시판", "팀관리", "설정"];
+	let pages = ["main_search.jsp", "일정", "게시판", "팀관리", "설정"];
 	
 	for(let i=0; i<$('.main-right-icons').length; i++){
 		$('.main-right-icons').eq(i).click(()=>{

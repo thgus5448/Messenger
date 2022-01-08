@@ -126,16 +126,13 @@ request.setAttribute("mainPage", mainPage);
 			</ul>
 
 			<a class="main-right-icons"><i class="fas fa-search"></i></a><br/>
-			<a class="main-right-icons"><i class="fas fa-vote-yea"></i></a><br/> 
+			<a class="poll-trigger"><i class="fas fa-vote-yea"></i></a><br/> 
 			<a class="main-right-icons"><i class="far fa-calendar"></i></a><br/>
 			<a class="main-right-icons"><i class="far fa-list-alt"></i></a><br/>
 			<a class="main-right-icons"><i class="fas fa-users"></i></a><br/>
 			<a class="main-right-icons"><i class="fas fa-cogs"></i></a><br/>
 		</div>
 			
-
-
-
 <div class="main-messenger-modal-black">
 
 	<!-- 채팅방 개설을 위한 모달창 -->
@@ -208,6 +205,11 @@ request.setAttribute("mainPage", mainPage);
 	<input type="button" value="채팅방 삭제" 		class="chatroom-delete-btn">
 <%-- 	</c:if> --%>
 
+</div>
+
+<!-- 투표 아이콘을 클릭했을 때 활성화-->
+<div id="poll-list-box" class="poll-list-box">
+ 
 </div>
 
 </div>	
