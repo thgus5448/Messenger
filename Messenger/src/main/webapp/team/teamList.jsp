@@ -31,7 +31,7 @@ request.setAttribute("mainPage", mainPage);
 		<!-- 백그라운드 -->
 		<div id="container">
 		
-			<!-- 가운데정렬과 크기지정 컨테이너 -->
+			<!-- 가운데정렬과 크기지정 컨테이너dd -->
 			<div id="container-inner">	
 				
 				<!-- 프로필 -->
