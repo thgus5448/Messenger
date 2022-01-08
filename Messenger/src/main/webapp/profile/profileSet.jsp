@@ -16,11 +16,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<form id="" method="post" action="./profile/frofile.jsp">
 			<div id="wrap">
 				
 				<header>
 				<span><a class="messengerMain" href="#">메신저 메인</a></span>
-				<i class="fas fa-chevron-right"></i>
+				<i class="fas fa-angle-right"></i>
 				<span><a class="profileSet" href="#">프로필 설정</a></span>
 		  	</header>
 		  
@@ -150,6 +152,7 @@
 			  		
 			  </article>
 			</div>
-		</div>		
+		</div>
+</form>		
 </body>
 </html>

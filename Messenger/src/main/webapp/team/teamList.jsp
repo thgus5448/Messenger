@@ -6,8 +6,10 @@
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
 	
+	<!-- 스크립트 연결 -->
+	<script src='./js/teamList.js'></script>
 	<!-- css적용 -->
-	<link rel="stylesheet" type="text/css" href="./css/teamList.css">
+	<link rel="stylesheet" type="text/css" href="../css/teamList.css">
 
 	<!-- 아이콘 사용을 위한 링크 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -17,23 +19,27 @@
 </head>
 
 <body>
-	
-		<div id="container">
-			<div id="inerContainer">
-				<form name="frm_teamList" method="post" action="">
-					<section id="profile">
-							<h3>프로필</h3>
-						<img class="userimg" src="https://jandi-box.com/assets/ic-profile.png">
-						<span class="userName">유다현</span>
-						<br>
-						<span class="userEmail">thgus201510573@gmail.com</span>
-						<button type="button" id="btn_profileSet">
-							<i class="fas fa-pen"></i>
-							<span>프로필 설정</span>
-						</button>
-					</section>
-					
-					<section id="teamList">
+
+<div id="teamList">	
+	<form name="frm_teamList" method="post" action="./team/teamList.jsp">	
+		<div id="inerContainer">	
+			
+			<!-- 프로필 -->
+			<div id="profile">
+				<h3>프로필</h3>		
+					<img class="userimg" src="https://jandi-box.com/assets/ic-profile.png">
+					<span class="userName">유다현</span>	
+					<br>	
+					<span class="userEmail">thgus201510573@gmail.com</span>	
+					<button type="button" id="btnProfileSet">	
+						<i class="fas fa-pen"></i>	
+						<span>프로필 설정</span>	
+					</button>	
+			</div>		
+							
+								
+			<!-- 팀리스트 -->		
+			<div id="teamList">
 						<h3>팀리스트</h3>
 						<div id="teamListBoder">
 							<div id="box1">
@@ -41,15 +47,16 @@
 								<span class="teamName">팀이름1</span>
 								<em class="emRed">4</em>
 								<br>
-								<span class="teamHost">teamhost1.gobal.com</span>
+								<div class="teamHost"><span>teamhost1.gobal.com</span></div>
 								
+								<!-- 버튼존 -->
 								<div id="btnZone">
 										<button type="button" class="btnTeamSet">
 											<i class="fas fa-cog"></i>
 											<span>팀 관리</span>
 										</button>
-										<input type="button" class="btnTeamGo" value="팀으로 가기">	
-									</div>
+										<button type="button" class="btnTeamGo" >팀으로 가기</button>
+								</div>
 									
 								<div id="owner">
 									<em class="emBlue">소유자</em>
@@ -57,18 +64,22 @@
 								</div>
 							</div>
 						</div>
-					</section>
+					</div>		
 					
-					<section id="btnTeamCreate">
-						<button type="button" class="btn1">
-							<i class="fas fa-plus"></i>
-							<span>팀 생성하기</span>
-						</button>
-					</section>
-			</form>
-		</div>
-
-		</div>
+					
+			<!-- 팀 생성 -->
+			<div id="btnTeamCreate">
+				<button>
+					<i class="fas fa-plus"></i>
+					<span>팀 생성하기</span>
+				</button>
+			</div>		
+					
+		</div>	
+	</form>	
+</div>	
 	
+	
+
 </body>
 </html>

@@ -60,7 +60,7 @@ html {
 	font-size: .8125rem;
 	font-weight: 600;
 }
-#profile button {
+btnProfileSet {
 	cursor: pointer;
 	border: none;
 	background: none;
@@ -179,7 +179,7 @@ html {
 
 
 /* btnTeamCreate */
-#btnTeamCreate .btn1{
+#btnTeamCreate button{
 	text-align: center;
   margin-top: .375rem;
   background-color: rgba(0,0,0,.05);
