@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>teamList.jsp</title>
-	<!-- 스크립트 적용 -->
+	<!-- 스크립트 적용 --> 
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>	
 	<script src='../js/teamList.js'></script>
 	<!-- css적용 -->
