@@ -19,10 +19,17 @@
 </head>
 
 <body>
+<%
+String mainPage = (request.getParameter("page") == null) ? "main_blank.jsp" : request.getParameter("page");	
+request.setAttribute("mainPage", mainPage);
+%>
 
 <div id="teamList">	
-	<form name="frm_teamList" method="post" action="./team/teamList.jsp">	
-		<div id="inerContainer">	
+
+	<form name="frm_teamList" method="post" action="../team/teamList.jsp">	
+		
+		<!-- 가운데정렬 컨테이너 -->
+		<div id="Contaner_MaginAuto">	
 			
 			<!-- 프로필 -->
 			<div id="profile">
@@ -40,8 +47,8 @@
 								
 			<!-- 팀리스트 -->		
 			<div id="teamList">
-						<h3>팀리스트</h3>
-						<div id="teamListBoder">
+				<h3>팀리스트</h3>
+				<div id="teamListBoder">
 							<div id="box1">
 								<img class="teamLogo" src="https://jandi-box.com/teams/0/logo.png?timestamp=20190628">
 								<span class="teamName">팀이름1</span>
@@ -65,14 +72,11 @@
 							</div>
 						</div>
 					</div>		
-					
+							
 					
 			<!-- 팀 생성 -->
-			<div id="btnTeamCreate">
-				<button>
-					<i class="fas fa-plus"></i>
-					<span>팀 생성하기</span>
-				</button>
+			<div id="TeamCreate">
+				<button type="button" class="btn_TeamCreate"><i class="fas fa-plus"></i>팀 생성하기</button>
 			</div>		
 					
 		</div>	

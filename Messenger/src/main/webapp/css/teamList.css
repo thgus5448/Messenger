@@ -14,6 +14,7 @@ html {
   overflow-x: hidden;
   font-size: 16px;
 }
+/*
 #container {
 	width: 848px;
 	height: 445px;
@@ -21,11 +22,11 @@ html {
 	margin: 0;
 	background-color: #FAFAFA;
 	color: #333;
-}
+}*/
 
 
 
-#inerContainer {
+#Contaner_MaginAuto {
 	width: 550px;
 	height: 375px;
 	margin: 0 auto;
@@ -179,7 +180,7 @@ btnProfileSet {
 
 
 /* btnTeamCreate */
-#btnTeamCreate button{
+#TeamCreate .btn_TeamCreate{
 	text-align: center;
   margin-top: .375rem;
   background-color: rgba(0,0,0,.05);

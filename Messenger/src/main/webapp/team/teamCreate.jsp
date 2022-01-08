@@ -4,12 +4,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>teamCreate</title>
+<title>teamCreate.jsp</title>
 
+<!-- 스크립트 연결 -->
+	<script src='./js/teamList.js'></script>
 <!-- css연결 -->
-<link rel="stylesheet" type="text/css" href="../css/teamCreate.css"> 
+	<link rel="stylesheet" type="text/css" href="../css/teamCreate.css"> 
+<!-- 아이콘 사용을 위한 링크 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
+<form id="frm_teamList" method="post" action="team/teamCreate">
+
+</form>
 		<div id="teamCreate">
 			<div id="teamCreate-header">
 				<header>
