@@ -1,24 +1,33 @@
 
-//프로필설정 버튼 클릭
-$("#btnProfileSet").click( ()=>{
-	$frm_teamList.action = "../profile/profileSet.jsp";
-	$frm_teamList.submit();
-})
+$(function(){
+	//2줄에 $(function(){}) 이거 추가하셔야 해요 다른 js파일도
+	//$(function(){
+	// 위아래 이렇게 해놓고 여기에다 스크립트 작성해야해요	
+	//})
 
-//팀관리버튼 클릭
-$(".btnTeamSet").click( ()=>{
-	$frm_teamList.action = "team/teamSet.jsp";
-	$frm_teamList.submit();
-})
+	//프로필설정 버튼 클릭 ( 지금 이거(9줄~13줄)를 고쳤어요 이런 구조로 해야해요.)
+	$("#btnProfileSet").click(()=>{
+		$frm = $('#frm_teamList')[0];
+		$frm.action = "./profile/profileSet.jsp";
+		$frm.submit();
+	})
+	
+	//팀관리버튼 클릭
+	$(".btnTeamSet").click( ()=>{
+		$frm_teamList.action = "team/teamSet.jsp";
+		$frm_teamList.submit();
+	})
+	
+	//팀으로 가기 버튼 클릭
+	$(".btnTeamGo").click( ()=> {
+		$frm_teamList.action = "messemger/main_messenger";
+		$frm_teamList.submit();
+	})
+	
+	//팀 생성버튼 클릭
+	$(".btn_TeamCreate").click(()=>{
+		$frm_teamList.action = "team/teamCreate.jsp";
+		$frm_teamList.submit();
+	})
 
-//팀으로 가기 버튼 클릭
-$(".btnTeamGo").click( ()=> {
-	$frm_teamList.action = "messemger/main_messenger";
-	$frm_teamList.submit();
-})
-
-//팀 생성버튼 클릭
-$(".btn_TeamCreate").click(()=>{
-	$frm_teamList.action = "team/teamCreate.jsp";
-	$frm_teamList.submit();
 })
