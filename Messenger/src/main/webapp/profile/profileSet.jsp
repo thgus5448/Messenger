@@ -7,7 +7,7 @@
 	<title>profileSet.jsp</title>
 	<!-- 스크립트 연결 -->
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>	
-	<script src='../js/teamList.js'></script>
+	<script src='../js/profileSet.js'></script>
 	<!-- css적용 -->
 	<link rel="stylesheet" type="text/css" href="../css/profileSet.css">
 	<!-- 아이콘 사용을 위한 링크 -->
@@ -18,23 +18,27 @@
 </head>
 <body>
 
-<form id="" method="post" action="./profile/frofile.jsp">
-			<div id="wrap">
-				
-				<header>
-				<span><a class="messengerMain" href="#">메신저 메인</a></span>
+<form id="frm-profileSet" method="post" action="./profile/frofile.jsp">
+	
+	<div id="profileSet">
+		<!-- 헤더 -->	
+		<div id="profileSet-header">
+			<header>
+				<a class="a-messengerMain" href="#">메신저 메인</a>
 				<i class="fas fa-angle-right"></i>
-				<span><a class="profileSet" href="#">프로필 설정</a></span>
-		  	</header>
-		  
-			  <article>
+				<a class="a-profileSet" href="#">프로필 설정</a>
+			</header>		
+		</div>  	
+		<!-- 본문 --> 
+		<div id="profileSet-article">
+			<article>
+			  	<!-- 프로필 사진 -->
 			  	<dl>
 			  		<dt>프로필 사진</dt>
-			  		
 			  		<dd>
-			  			<div id="profileSet">
+			  			<div id="profileSet-article-profileSet">
 				  			<img src="https://jandi-box.com/assets/ic-profile.png">
-					  		<button type="button">수정</button>
+					  		<button class="profileSet-article-btn-profileSet" type="button">수정</button>
 			  			</div>
 			  			
 					  	<div id="hiddenlist" hidden>
@@ -52,6 +56,7 @@
 			  		</dd>
 					</dl>
 					
+					<!-- 이름 -->
 					<dl  class="dlHover">
 			  		<dt>이름</dt>
 			  		<dd>
@@ -66,7 +71,8 @@
 							</div>
 			  		</dd>
 			  	</dl>	
-			  		
+			  	
+			  	<!-- 이메일 관리 -->	
 			  	<dl class="dlHover">	
 			  		<dt>이메일 관리</dt>
 			  		<dd>
@@ -108,7 +114,8 @@
 			  				<button type="button">확인</button>
 			  			</div>
 			  	</dl>	
-			  			
+			  	
+			  	<!-- 비밀번호 변경하기 -->		
 			  	<dl class="dlHover">	
 			  		<dt>비밀번호 변경하기</dt>
 			  		<dd>
@@ -128,11 +135,12 @@
 			  		</dd>
 			  	</dl>
 			  	
+			  	<!-- 계정 삭제 -->
 			  	<dl class="dlHover borderNone">	
 			  		<dt>계정 삭제</dt>
 			  			<dd>
 			  				<div class="close-mode">
-			  					
+			  					<i class="fas fa-chevron-down floatRigt"></i>
 			  				</div>
 			  				<div class="open-mode">
 			  					<p>메신저 계정을 삭제하면 더 이상 메신저에 남겨진
@@ -150,10 +158,11 @@
 			  				</div>
 			  			</dd>
 			  	</dl>
-			  		
 			  </article>
-			</div>
 		</div>
-</form>		
+				
+	</div>				
+</form>
+		
 </body>
 </html>

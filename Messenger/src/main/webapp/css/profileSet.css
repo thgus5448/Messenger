@@ -24,28 +24,29 @@
 	list-style: none;
 }
 
-#wrap {
+#profileSet {
 	padding-top: 24px;
 	display: bor;
 	margin: 0 auto; 
 }
-#wrap header {
+#profileSet-header {
 	line-height: 18px;
   font-size: 14px;
   color: #777;
   height: 35px;
 }
-#wrap header a {
+#profileSet-header .a-messengerMain {
 	text-decoration: none;
-	font-size: .875rem;
 	color: #777; 
 }
-#wrap .profileSet {
+#profileSet-header .a-profileSet {
+	text-decoration: none;
+	color: #777;
 	font-weight: 600;
 	color: gray;
 	position: relative;
 }
-#wrap article {
+#prprofileSet-article {
 	width: 573px;
 	border: 1px solid rgba(0,0,0,.11);
 	box-shadow: 0 3px 10px -2px rgb(0 0 0 / 8%);
@@ -55,7 +56,7 @@
   position: relative;
   display: block;
 }
-dl {
+#profileSet-article dl {
 	position: relative;
   box-sizing: content-box;
   background-color: #fff;
@@ -74,7 +75,7 @@ dl {
   margin-top: 0;
   margin-bottom: 0;
 }
-dt{
+#profileSet-article dt{
 	padding-top: 20px;
 	font-size: 1rem;
   font-weight: 700;
@@ -85,7 +86,7 @@ dt{
   padding: 1.5625rem 0 1.5625rem .9375rem;
   vertical-align: top;
 }
-dd{
+#profileSet-article dd{
 	width: 300px;
 	display: table-cell;
 	text-align: left;
@@ -113,14 +114,14 @@ dd{
 	top: 0;
   left: 0;
 }
-#profileSet img {
+#profileSet-article-profileSet img {
 	width: 48px;
 	height: 48px;
 	opacity: 100;
 	border-radius: 100px; 
 	position: relative;
 }
-#profileSet button{
+#profileSet-article-profileSet .profileSet-article-btn-profileSet{
 	left: 0;
 	width: 48px;
 	height: 48px;

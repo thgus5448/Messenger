@@ -13,21 +13,24 @@ $(function(){
 	})
 	
 	//팀관리버튼 클릭
-	$(".btnTeamSet").click( ()=>{
+	$(".btnTeamSet").click(()=>{
 		$frm = $("frm_teamList")[0];
 		$frm.action = "teamSet.js";
+		$frm.submit();
 	})
 	
 	//팀으로 가기 버튼 클릭
-	$(".btnTeamGo").click( ()=> {
+	$(".btnTeamGo").click(()=> {
 		$frm = $("frm_teamList")[0];
 		$frm.action = "main_messenger";
+		$frm.submit();
 	})
 	
 	//팀 생성버튼 클릭
 	$(".btn_TeamCreate").click(()=>{
 		$frm = $("frm_teamList")[0];
-		$frm.action = "teamCreate"
+		$frm.action = "teamCreatejsp";
+		$frm.submit();
 	})
 
 })
