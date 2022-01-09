@@ -34,4 +34,9 @@ $(function() {
 		$("#pollFormBox").empty();
 		$("#pollFormBox").load("pollForm2.jsp");
 	});
+	
+	$("#pollInsertBtn").click(function() {
+		alert("작성이 완료되었습니다.");
+		window.open('about:blank','_self').self.close();
+	});
 }); 

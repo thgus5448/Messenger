@@ -24,7 +24,8 @@
 		</div>
 		<div id='upperContainer'>
 			<div id='pollCreateContainer'>
-				<input type="button" value="투표 만들기" id="pollCreate" disabled="disabled"/>
+				<input type="button" value="투표 만들기" id="pollCreate" 
+							 onclick="window.open('pollInsert.jsp','pollInsert','width=585, height=440, left=600, top=200')">
 			</div>
 		</div>
 		<div id='pollContainer'>
