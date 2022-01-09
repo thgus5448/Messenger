@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* 전체 CSS */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+	letter-spacing: 0;
+	overflow: hidden;
+}
+
+/* 투표하기 */
+#pollFormTable{
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%
+}
+
+#pollFormTable th{
+	background-color: #FF9D7B;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 15px;
+  overflow: hidden;
+	white-space : nowrap;
+	text-overflow: ellipsis;
+}
+
+#pollFormTable td{
+	text-align: left;
+	padding: 8px;
+	overflow: hidden;
+	white-space : nowrap;
+	text-overflow: ellipsis;
+}
+
+#pollFormTable td .pollItem{
+	font-size: 15px;
+	overflow: hidden;
+	white-space : nowrap;
+	text-overflow: ellipsis;
+}
+
+/* 투표하기, 리셋하기 버튼 */
+#pollFormTable #pollBtnBox{
+	text-align: center;
+}
+
+#pollFormTable .pollButton{
+	padding:5px 10px;
+	border-radius: 5px 5px 5px 5px;
+	border:1px solid #fa8258;
+	color: #333;
+	font-size: 16px;
+	margin-left: 5px; 
+	margin-right: 5px; 
+}
+
+#pollFormTable .pollButton:hover{
+	background:#fff;
+	cursor: pointer;
+}
+ 
