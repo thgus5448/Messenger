@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* 전체 CSS */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+	letter-spacing: 0;
+}
+
+/* 전체 Box */
+#container {
+	display: inline-block;
+	width: 375px;
+	height: 710px;
+	margin: 5px;
+	border: 2px solid #EAEBEB;
+	border-radius: 10px 10px 10px 10px;
+}
+
+/* 투표함 정보 Box*/
+#pollInfoContainer{
+	display: flex;
+	justify-content: center;
+	width: 355px;
+	height: 40px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-left: 8px;
+	border: 2px solid #EAEBEB;
+	border-radius: 10px 10px 10px 10px;	
+	font-size: 16px;
+	font-weight: bold;
+	color: #fa8258;
+}
+
+/* 1) 투표함 이름 Box*/
+#infoContainer {
+	padding-top: 2px;
+}
+
+/* 투표 만들기 Box*/
+#upperContainer {
+	display: inline-block;
+	width: 360px;
+	height: auto;
+	margin-top: 10px;
+	box-sizing: border-box;
+	padding: 0px;
+	background-color: #fff;
+}
+
+#pollCreateContainer {
+	float: right;
+}
+
+#pollCreate{
+	clear: both;
+	padding:5px 10px;
+	border-radius: 5px 5px 5px 5px;
+	border:1px solid #fa8258;
+	color: #333;
+	font-size: 16px;
+}
+
+#pollCreate:hover{
+	background:#fff;
+	cursor: pointer;
+}
+
+/* 투표하기 및 투표리스트 Box */
+#pollContainer {
+	display: inline-block;
+	margin: 10px;
+	padding: 5px;
+	box-sizing: border-box;
+	width: 350px;
+	min-height: 580px;
+	max-height: 580px;
+	vertical-align: bottom;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	border: 2px solid #EAEBEB;
+	border-radius: 10px 10px 10px 10px;
+	background-color: #fafafa;
+	text-align: center;
+}
+
+#pollContainer .title{
+	font-size: 18px;
+	color: #fa8258;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#pollContainer #pollFormBox{
+	margin: 0px 5px;
+	margin-bottom: 10px;
+}
+
+#pollContainer #pollListBox{
+	margin: 0px 5px;
+}
+
+/* 투표하기 */
+#pollListTable{
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%; 
+}
+
+#pollListTable th{
+	background-color: #FF9D7B;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 15px;
+}
+
+#pollListTable td{
+	text-align: center;
+	padding: 8px;
+	font-size: 15px;
+	overflow: hidden;
+	white-space : nowrap;
+	text-overflow: ellipsis;
+}
+
+.pollListBtn{
+	font-size: 15px;
+} 
