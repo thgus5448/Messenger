@@ -8,7 +8,8 @@
 
 <!-- 스크립트 연결 -->
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>	
-	<script src='../js/teamCreate.js'></script>	
+	<!-- 스크립트 -->
+	<script src="../js/teamSet_main.js"></script>		
 <!-- css연결 -->
 	<link rel="stylesheet" type="text/css" href="../css/teamCreate.css"> 
 <!-- 아이콘 사용을 위한 링크 -->
@@ -35,7 +36,8 @@
 					<section>
 						<label>팀 이름</label>
 						<br>
-						<input type="text" class="teamCreate-teamName" placeholder="팀 이름" value="" autofocus="autofocus">
+						<input type="text" class="teamCreate-teamName" placeholder="팀 이름" value="" 
+									 autofocus="autofocus">
 					</section>
 					<!-- 팀 도메인 -->
 					<section>
@@ -47,7 +49,7 @@
 						</div>
 					</section>
 					<!-- 버튼 -->
-					<button type="button" id="btn_goteam">팀으로 이동하기</button>
+					<button id="btn_goteam">팀으로 이동하기</button>
 			</article>
 			</div>
 		</div>

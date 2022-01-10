@@ -8,7 +8,7 @@
 <!-- css -->
 
 <!-- 스크립트 -->
-	<script src="../js/teamSet."></script>
+	<script src="../js/teamSet_main.js"></script>
 	
 </head>
 <body>

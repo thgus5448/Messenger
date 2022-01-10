@@ -13,20 +13,26 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <!-- 스크립트 -->
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript">
 	$(function(){
 		
 		$('#btn-profileSet').click(function(){
 			//location.href = '../profile/profileSet.jsp';
-			$(location).attr('href','../profile/profileSet.jsp');
+			//$(location).attr('href','../profile/profileSet.jsp');
+			window.open("../profile/profileSet.jsp");
 		});
 		
 		$('.btnTeamSet').click(function(){
-			location.href= 'teamSet_main.jsp';
+			window.open("teamSet_main.jsp");
 		});
 		
 		$('.btnTeamGo').click(function(){
-			location.href= '';
+			window.open("../messenger/main_messenger.jsp");
+		});
+		
+		$('.btn-teamCreate').click(function(){
+			window.open("teamCreate.jsp");
 		});
 	});
 		

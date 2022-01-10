@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <!-- 스크립트 -->
-	<script src="../js/teamSet."></script>
+	<script src="../js/teamSet_main.js"></script>
 </head>
 <body>
 	<form id="frm_teamSet" method="post" 
