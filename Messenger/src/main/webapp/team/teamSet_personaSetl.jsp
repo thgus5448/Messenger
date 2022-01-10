@@ -5,9 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<!-- 스크립트 -->
+	<script src="../js/teamSet."></script>
 </head>
 <body>
-	<form id="frm_teamSet_personal" method="post" action="">
+	<form id="frm_teamSet" method="post" 
+				action="teamSet_main.jsp?sub=teamSet_personalSet.jsp">
 		<dl>
 			<dt>팀 이메일 설정</dt>
 				<dd>thgus201510573@gmail.com</dd>

@@ -5,6 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<!-- 스크립트 -->
+	<script src="../js/teamSet."></script>	
+<!-- css -->
 	<style>
 		img {
 			width: 48px;
@@ -14,8 +17,8 @@
 	</style>
 </head>
 <body>
-	<form id="frm_teamSet_memberSet" method="post" action="">
-		
+	<form id="frm_teamSet" method="post" 
+				action="teamSet_main.jsp?sub=teamSet_memberSet.jsp">
 		<header>
 			<button>전체 선택</button>
 			<button>멤버 관리</button>
