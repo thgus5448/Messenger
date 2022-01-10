@@ -1,149 +1,116 @@
 @charset "UTF-8";
 
-.close-mode {
-	display: block;
-	cursor: pointer;
-	display: block;
-  margin-top: 3px;
-  font-size: .9375rem;
-  color: #505050;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-wrap: normal;
-  word-break: break-all;
-}
-.open-mode {
-	visibility: hidden;
-	display: none;
-}
-#hiddenlist {
-	visibility: hidden;
-}
-#hiddenlist ul {
-	list-style: none;
-}
-
 #profileSet {
-	width: 500px;
+	width: 600px;
 	height: auto;
 	padding-top: 24px;
 	margin: 0 auto; 
 }
-#profileSet-header {
+article {
+	display: block;
+	padding: 18px 32px;
+	border: 1px solid #ccc;
+	
+	background: #fff;
+	box-shadow: 0 3px 10px -2px rgb(0 0 0 / 8%);
+	border: 1px solid rgba(0,0,0,.11);
+	height: auto;
+}
+#img-frofile {
+	width: 48px;
+	height: 48px;
+	border-radius: 100%;
+}
+#link_messenserMain {
+	text-decoration: none;
+	color: #777;
 	line-height: 18px;
   font-size: 14px;
   color: #777;
   height: 35px;
 }
-#profileSet-header .a-messengerMain {
-	text-decoration: none;
-	color: #777; 
-}
-#profileSet-header .a-profileSet {
+#link_profileSet {
+	font-weight: 700;
 	text-decoration: none;
 	color: #777;
-	font-weight: 600;
-	color: gray;
-	position: relative;
+	line-height: 18px;
+  font-size: 14px;
+  color: gray;
+  height: 35px;
 }
-#prprofileSet-article {
-	width: 573px;
-	border: 1px solid rgba(0,0,0,.11);
-	box-shadow: 0 3px 10px -2px rgb(0 0 0 / 8%);
-  background: #fff;
-  padding: 18px 32px;
-  min-height: 240px;
-  position: relative;
-  display: block;
-}
-#profileSet-article dl {
-	position: relative;
-  box-sizing: content-box;
-  background-color: #fff;
-  box-sizing: content-box;
-  border-width: 1px 0;
-  border-color: rgba(215,225,230,.6);
-  border-style: solid;
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  border-top-color: transparent;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-#profileSet-article dt{
-	padding-top: 20px;
-	font-size: 1rem;
-  font-weight: 700;
-  color: #333;
-  float: left;
-  display: table-cell;
-  vertical-align: top;
-  padding: 1.5625rem 0 1.5625rem .9375rem;
-  vertical-align: top;
-}
-#profileSet-article dd{
-	width: 300px;
-	display: table-cell;
-	text-align: left;
-	padding-top: 20px;
-  padding-bottom: 24px;
-  position: relative;
-  vertical-align: top;
-}
-.borderNone{
-	border: none;
-}
-.dlHover:hover {
-	background-color: #c0c0c0;
-	cursor: pointer;
-}
-
-.btn-fff {
-	  background-color: #fff;
-    color: #888;
-    border: 1px solid #DCDCDC;
-    min-width: 2em;
-}
-
-#profileSet {
-	top: 0;
-  left: 0;
-}
-#profileSet-article-profileSet img {
+#btn-changeProfile {
 	width: 48px;
 	height: 48px;
-	opacity: 100;
-	border-radius: 100px; 
-	position: relative;
-}
-#profileSet-article-profileSet .profileSet-article-btn-profileSet{
-	left: 0;
-	width: 48px;
-	height: 48px;
-	border-radius: 100px;
 	border: none;
-	color: #ccc;
+	border-radius: 100%;
 	text-shadow: 0 0 2px rgb(0 0 0 / 50%);
+	color: #fff;
 	font-size: 14px;
-  font-weight: 700;
+	font-weight: 700;
 	text-align: center;
 	background-color: rgba(0,0,0,.3);
 	opacity: 0;
 	vertical-align: top;
 	position: absolute;
+		position: fixed;
+	transform: translate(-100%, 0%);
 }
-#profileSet button:hover {
+#btn-changeProfile:hover {
 	opacity: 100;
 	cursor: pointer;
 }
-
-.floatRigt{
+#btn-changeProfile-list {
+	border: 1px solid #ccc;
+	width: 150px;
+	margin: auto;
+	padding: 10px;
+	line-height: 30px;
+	background-color: #FAFAFA;
+	position:fixed; /* 해상도 상관없이 항상 고정위치에 오도록*/
+	transform: translate(55%, 0%);
+}
+.liststyle-none{
+	list-style: none;
+}
+.hidden {
+	visibility: hidden;
+}
+dl {
+	line-height: 30px;
+}
+dt{
+	font-weight: 700;
+	float: left;
+	color: #333;
+	line-height: 40px;
+	padding: 20px 0 20px 0;
+}
+dd{
+	width: 350px;
+	transform: translate(35%, 0%);	
+	box-sizing: content-box;
+	background-color: #fff;
+	text-align: inherit;
+	position: relative; /*노확실*/
+	padding: 20px 10px 20px 20px;
+}
+dd:hover {
+	cursor: pointer;
+	background-color: #DDDDDD;
+}
+#name-openMode {
+	display: none;
+}
+#email-openMode {
+	display: none;
+}
+#pwd-openMode {
+	display: none;
+}
+#del-openMode{
+	display: none;
+}
+.i-green{
 	position: relative;
 	font-size: 10px;
 	color: green;
@@ -152,14 +119,8 @@
 	margin-top: 10px;
 	padding-right: 5px;
 }
-
-#profileImg-setBtnList{
-	display: 
-}
-/*프로필 수정버튼 누르면 뜨는 리스트*/
-#profileImg-setBtnList ul{
-	list-style: none;
-	background-color: #fff;
-	border-radius: 4px;
-	visibility: hidden;
+.btn-fff {
+	  background-color: #fff;
+    color: #888;
+    border: 1px solid #DCDCDC;
 }
