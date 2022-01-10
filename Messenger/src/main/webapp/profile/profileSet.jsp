@@ -32,6 +32,7 @@
 		<!-- 본문 --> 
 		<div id="profileSet-article">
 			<article>
+			
 			  	<!-- 프로필 사진 -->
 			  	<dl>
 			  		<dt>프로필 사진</dt>
@@ -41,36 +42,39 @@
 					  		<button class="profileSet-article-btn-profileSet" type="button">수정</button>
 			  			</div>
 			  			
-					  	<div id="hiddenlist" hidden>
+					  	<div id="profileImg-setBtnList">
 						  	<ul>
 						  			<li>
 						  				<i class="fas fa-file-upload"></i>
-						  				<label>사진 올리기</label>	
+						  				<label> 사진 올리기</label>	
 						  			</li>
 						  			<li>
 						  				<i class="far fa-user-circle"></i>
-						  				<label>캐릭터 선택하기</label>
+						  				<label> 캐릭터 선택하기</label>
 						  			</li>
 						  		</ul>
-					  		</div>	
+					  	</div>	
 			  		</dd>
 					</dl>
 					
 					<!-- 이름 -->
-					<dl  class="dlHover">
-			  		<dt>이름</dt>
-			  		<dd>
-			  			<div class="close-mode">
-			  				<span>유다현</span>
-			  				<i class="fas fa-chevron-down floatRigt"></i>
-			  			</div>
-							<div class="open-mode">
-								<input type="text" value="유다현">
-				  			<button type="button">취소</button>
-				  			<button type="button">확인</button>
-							</div>
-			  		</dd>
-			  	</dl>	
+					<div id="profileSet-name">
+						<dl class="dlHover">
+				  		<dt>이름</dt>
+				  		<dd class="profileSet-name-dd">
+				  			<div class="close-mode">
+				  				<span>유다현</span>
+				  				<i class="fas fa-chevron-down floatRigt"></i>
+				  			</div>
+								<div class="open-mode">
+									<input type="text" value="유다현">
+					  			<button type="button">취소</button>
+					  			<button type="button">확인</button>
+								</div>
+				  		</dd>
+			  		</dl>	
+					</div>
+					
 			  	
 			  	<!-- 이메일 관리 -->	
 			  	<dl class="dlHover">	
