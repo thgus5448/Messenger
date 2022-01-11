@@ -6,20 +6,24 @@
 	padding-top: 24px;
 	margin: 0 auto; 
 }
-article {
-	display: block;
-	padding: 18px 32px;
+.border_article {
+	display: table;
+	width: auto;
+	height: auto;
 	border: 1px solid #ccc;
-	
 	background: #fff;
+	color: #333;
 	box-shadow: 0 3px 10px -2px rgb(0 0 0 / 8%);
 	border: 1px solid rgba(0,0,0,.11);
-	height: auto;
+	margin: 0;
+	padding: 10px;
 }
 #img-frofile {
 	width: 48px;
 	height: 48px;
 	border-radius: 100%;
+	margin: 0;
+	padding: 0;
 }
 #link_messenserMain {
 	text-decoration: none;
@@ -67,7 +71,7 @@ article {
 	line-height: 30px;
 	background-color: #FAFAFA;
 	position:fixed; /* 해상도 상관없이 항상 고정위치에 오도록*/
-	transform: translate(55%, 0%);
+	transform: translate(55%, -30%);
 }
 .liststyle-none{
 	list-style: none;
@@ -76,27 +80,33 @@ article {
 	visibility: hidden;
 }
 dl {
-	line-height: 30px;
+	display:block;
+	line-height: 40px;
+	margin: 0;
+	float: left;
+	width: 100%;
+	display: table;
+	color: gray;
+}
+dl:hover  {
+	cursor: pointer;
+	background-color: #FFF1BD;
+	text-align: left;
 }
 dt{
 	font-weight: 700;
 	float: left;
 	color: #333;
-	line-height: 40px;
 	padding: 20px 0 20px 0;
+	float: left;
+	padding: 20px 0 20px 20px;
+	border: 1px solid red;
 }
 dd{
-	width: 350px;
-	transform: translate(35%, 0%);	
-	box-sizing: content-box;
-	background-color: #fff;
-	text-align: inherit;
-	position: relative; /*노확실*/
-	padding: 20px 10px 20px 20px;
-}
-dd:hover {
-	cursor: pointer;
-	background-color: #DDDDDD;
+	display:block;
+	width: 300px;
+	transform: translate(35%, 0%);
+	border: 1px solid red;
 }
 #name-openMode {
 	display: none;
@@ -110,7 +120,7 @@ dd:hover {
 #del-openMode{
 	display: none;
 }
-.i-green{
+.i-greenDown{
 	position: relative;
 	font-size: 10px;
 	color: green;
@@ -119,8 +129,25 @@ dd:hover {
 	margin-top: 10px;
 	padding-right: 5px;
 }
+.i-greenUp{
+	position: relative;
+	font-size: 10px;
+	color: green;
+	float: right;
+	vertical-align: top;
+	margin-top: 10px;
+	padding-right: 5px;
+}
 .btn-fff {
 	  background-color: #fff;
     color: #888;
     border: 1px solid #DCDCDC;
+}
+.btn-ccc {
+	background-color: #ccc;
+	color: white;
+	border: 1px solid #DCDCDC;
+}
+dd h5 {
+	font-size: 15px;
 }
