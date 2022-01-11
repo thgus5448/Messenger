@@ -8,7 +8,7 @@
 }
 .border_article {
 	display: table;
-	width: auto;
+	
 	height: auto;
 	border: 1px solid #ccc;
 	background: #fff;
@@ -96,17 +96,18 @@ dl:hover  {
 dt{
 	font-weight: 700;
 	float: left;
+	width: 200px;
 	color: #333;
 	padding: 20px 0 20px 0;
 	float: left;
 	padding: 20px 0 20px 20px;
-	border: 1px solid red;
 }
 dd{
-	display:block;
-	width: 300px;
-	transform: translate(35%, 0%);
-	border: 1px solid red;
+		width: 200px;
+	display: table-cell;
+	width: 350px;
+	vertical-align: top;
+	transform: translate(0%, 0%);
 }
 #name-openMode {
 	display: none;

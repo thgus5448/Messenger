@@ -122,12 +122,15 @@ img {
   font-style: normal;
   text-decoration: none;
   display: inline-block;
-  margin-left: 45px;
+  float: left;
 }
 
 /* btnZone */
 #btnZone {
 	float: right;
+	vertical-align: sub;
+	transform: translate(0%, -60%);
+	
 }
 #btnZone .btnTeamSet{
 	height: 2.1875rem;

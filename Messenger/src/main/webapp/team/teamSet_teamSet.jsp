@@ -6,9 +6,9 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <!-- css -->
-
+	<link rel="stylesheet" type="text/css" href="../team/teamSet.css">
 <!-- 스크립트 -->
-	<script src="../js/teamSet_main.js"></script>
+	<script src="../js/teamSet.js"></script>
 	
 </head>
 <body>

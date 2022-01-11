@@ -51,7 +51,7 @@ request.setAttribute("email", email);
 						<a href="index.jsp?sub=../login/login.jsp" class="nav-login">로그인</a>
 					</c:when>
 					<c:otherwise>
-						<a href="../main/main_messenger.jsp" class="nav-logout">입장하기</a>
+						<a href="../team/teamList.jsp" class="nav-logout">입장하기</a>
 					</c:otherwise>
 				</c:choose>
 			</div>

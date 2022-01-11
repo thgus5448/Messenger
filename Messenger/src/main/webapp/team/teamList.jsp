@@ -28,7 +28,7 @@
 		});
 		
 		$('.btnTeamGo').click(function(){
-			window.open("../messenger/main_messenger.jsp");
+			window.open("../messenger/chat.jsp");
 		});
 		
 		$('.btn-teamCreate').click(function(){
@@ -44,38 +44,34 @@
 <form id="frm_teamList" method="post" action="">
 	<div id="container"> <!-- 가운데정렬과 크기지정 컨테이너 --> 
 		
-		<div id="profile"> <!-- 프로필 -->
+		<div id="profile">
 			<h3>프로필</h3>		
-			<img class="userimg" src="https://jandi-box.com/assets/ic-profile.png">
-			<span class="userName">유다현</span>	
-			<br>	
-			<span class="userEmail">thgus201510573@gmail.com</span>	
-			<button id="btn-profileSet"><i class="fas fa-pen"></i> 프로필 설정</button>	
+				<img class="userimg" src="https://jandi-box.com/assets/ic-profile.png">
+				<span class="userName">유다현</span>	
+				<br>	
+				<span class="userEmail">thgus201510573@gmail.com</span>	
+				<button id="btn-profileSet"><i class="fas fa-pen"></i> 프로필 설정</button>	
 		</div>			
 								
 								
 		<div id="teamList"> <!-- 팀리스트 -->
-			<h3>팀리스트</h3>
+			<h3>팀 리스트</h3>
 			<div id="teamListBoder">
 				<div id="box1">
 					<img class="teamLogo" src="https://jandi-box.com/teams/0/logo.png?timestamp=20190628">
 					<div class="teamNameAndHose">
-						<span class="teamName">팀이름1</span>
+						<span class="teamName">팀채팅방 이름</span>
 						<em class="emRed">4</em>
 						<br>
-						<div class="teamHost"><span>teamhost1.gobal.com</span></div>
-					</div>
-							
-							
-			
-					<div id="btnZone"> <!-- 버튼존 -->
-						<button class="btnTeamSet"><i class="fas fa-cog"></i> 팀 관리</button>
-						<button class="btnTeamGo" >팀으로 가기</button>
-					</div>
-											
-					<div id="owner">
+						<div id="owner">
 						<em class="emBlue">소유자</em>
-						<span class="owerMail">owner@mail.com</span>
+						<span class="owerMail">유다현</span>
+					</div>
+					</div>
+							
+					<div id="btnZone"> <!-- 버튼존 -->
+						<button class="btnTeamSet"><i class="fas fa-cog"></i> 팀설정</button>
+						<button class="btnTeamGo">팀으로 이동</button>
 					</div>
 				</div>
 			</div>
@@ -84,7 +80,7 @@
 						
 				
 		<div id="teamCreate"> <!-- 팀 생성 -->
-			<button class="btn-teamCreate"><i class="fas fa-plus"></i> 팀 생성하기</button>
+			<button class="btn-teamCreate"><i class="fas fa-plus"></i> 채팅방 생성</button>
 		</div>		
 	</div>				
 </form>	
