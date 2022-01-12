@@ -1,19 +1,24 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<style>
-header {
+@charset "UTF-8";
+
+#login {
+	padding:8px;
+	text-align: right;
+}
+
+
+#header {
 	position: relative;
 	height:150px;
 	color: #fff;
 	padding: 10px;
 	background-color: #7C99AC;
 }
-header nav{
+#header nav{
 	position: absolute;
 	right:5px;
 	bottom:6px;
 }
-nav>a{
+#header nav>a{
 	text-decoration: none;
 	border:1px solid #eee;
 	color:#fff;
@@ -22,11 +27,11 @@ nav>a{
 	float:left;
 	text-align: center;
 }
-nav>a:first-child{
+#header nav>a:first-child{
 	border-left:2px solid #eee;
 	border-radius:10px 0 0 10px;
 }
-nav>a:last-child{
+#header nav>a:last-child{
 	border-right:2px solid #eee;
 	border-radius: 0 10px 10px 0;
 }
@@ -34,14 +39,8 @@ nav>a:hover{
 	background-color:#fffc;
 	color:#7F7C82;
 }
-</style>
-
-<header>
-	<h1>메신저</h1>
-	<nav>
-		<a href="index.jsp">HOME</a>
-		
-		<a href="#">메시지</a>
-		<a href="#">결재</a>
-	</nav>
-</header>
+#footer{
+	height:150px;
+	background-color:#C9CCD5;
+}
+	
