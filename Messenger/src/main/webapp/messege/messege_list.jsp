@@ -59,6 +59,10 @@
 				<td>2022-01-13</td>
 			</tr>
 		</table>
+		<button type="button">처음</button>
+		<button type="button">이전</button>
+		<button type="button">다음</button>
+		<button type="button">취소</button>
 	</form>
 </div>
 </body>

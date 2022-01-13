@@ -13,12 +13,6 @@ $(function(){
 		$sub = "teamSet_personalSet.jsp";
 	});
 	
-	/* teamCreate.jsp */
-	$('#btn_goteam').click(function(){
-		$('.teamCreate-teamName' && $('.teamCreate-teamDomain') ?
-			alert("정보를 입력해주세요.") : $('#btn_goteam').style;
-		
-	});
 	
 	
-})
+});

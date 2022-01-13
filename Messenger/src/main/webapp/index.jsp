@@ -20,13 +20,7 @@ if( request.getParameter("sub") != null){
 	<div id='index'><!-- (1) -->
 	
 		<!-- 로그인 -->
-		<div id="login">
-			<label>아이디 </label>
-				<input type='text' name='loginMid'>
-			<label>암호 </label>
-				<input type='password' name='loginPwd'>
-				<input type='submit' value='로그인' />
-		</div>
+		<%@include file='login.jsp' %>
 		
 		<!-- header -->
 		<div id="header">

@@ -32,11 +32,6 @@
 		<br>
 		<button type="button">작성</button>
 		<button type="button">취소</button>
-		<br>
-		<button type="button">처음</button>
-		<button type="button">이전</button>
-		<button type="button">다음</button>
-		<button type="button">취소</button>
 	</form>
 </div>
 </body>
