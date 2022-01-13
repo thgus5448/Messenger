@@ -5,11 +5,24 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<!-- 스크립트 연결 -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		
+		$('#btn_write').click(function(){
+			location.href = "index.jsp?sub=./messege/messege_write.jsp";
+		});
+		
+	});
+	</script>
 </head>
 <body>
 <div id="messege_list">
 	<form id="frm_messege_list" method="post" action="">
 		<h2>메시지</h2>
+		<button type="button" id="btn_write">메시지쓰기</button>
+		<br>
 		<select>
 			<option>작성자</option>
 			<option>작성일자</option>

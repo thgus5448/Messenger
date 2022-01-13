@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>메신저 메인 페이지</title>
-<link rel="stylesheet" type="text/css" href="css/index.css">;
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 <%
@@ -33,8 +33,8 @@ if( request.getParameter("sub") != null){
 			<header>
 				<h1>메신저</h1>
 					<nav>
-						<a href="index.jsp?sub=main.jsp">HOME</a>
-						<a href="index.jsp?sub=./messege_list.jsp">메시지</a>
+						<a href="index.jsp?sub=./main.jsp">HOME</a>
+						<a href="index.jsp?sub=./messege/messege_list.jsp">메시지</a>
 						<a href="#">결재</a>
 					</nav>
 			</header>
