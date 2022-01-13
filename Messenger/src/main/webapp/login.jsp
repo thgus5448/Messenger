@@ -4,17 +4,17 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel='stylesheet' type='text/css'
-      href='./css/index.css'>
+<title>login.jsp</title>
+<!-- css적용 -->
+<link rel='stylesheet' type='text/css' href='./css/index.css'>
 </head>
 <body>
 <div id="login">
 	<label>아이디 </label>
-		<input type='text' name='loginMid'>
+		<input id="loginMid" type='text' name='loginMid' value="">
 	<label>암호 </label>
 		<input type='password' name='loginPwd'>
-		<input type='submit' value='로그인' />
+		<input id="brn_login" type='submit' value='로그인' />
 </div>
 </body>
 </html>
