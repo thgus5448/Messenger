@@ -8,7 +8,7 @@
 </head>
 <body>
 <div id="messege_write">
-	<form id="frm_messege_write">
+	<form id="frm_messege_write" method="post" action="">
 		<h2>메시지 작성</h2>
 		<label>작성일자</label>
 		<input type="text" readonly="readonly">

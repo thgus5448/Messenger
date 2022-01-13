@@ -33,8 +33,8 @@ if( request.getParameter("sub") != null){
 			<header>
 				<h1>메신저</h1>
 					<nav>
-						<a href="index.jsp">HOME</a>
-						<a href="#">메시지</a>
+						<a href="index.jsp?sub=main.jsp">HOME</a>
+						<a href="index.jsp?sub=./messege_list.jsp">메시지</a>
 						<a href="#">결재</a>
 					</nav>
 			</header>
