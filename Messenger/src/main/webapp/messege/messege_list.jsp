@@ -10,8 +10,14 @@
 	<script type="text/javascript">
 	$(function(){
 		
+		//메시지쓰기 버튼
 		$('#btn_write').click(function(){
 			location.href = "index.jsp?sub=./messege/messege_write.jsp";
+		});
+		
+		//메시지 누르면 상세내용보기
+		$('#tr1').click(function(){
+			location.href = "index.jsp?sub=./messege/messege_detail.jsp";
 		});
 		
 	});
@@ -38,14 +44,14 @@
 				<th>작성자</th>
 				<th>일자</th>
 			</tr>
-			<tr>
+			<tr id="tr1">
 				<td>1</td>
 				<td>전체</td>
 				<td>동에 번쩍, 서에 번쩍</td>
 				<td>홍길동</td>
 				<td>2022-01-12</td>
 			</tr>
-			<tr>
+			<tr id="tr2">
 				<td>2</td>
 				<td>나에게</td>
 				<td>방가방가</td>
