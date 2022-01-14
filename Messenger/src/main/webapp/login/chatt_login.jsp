@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>로그인</title>
-<link rel='stylesheet' type='text/css' href='../css/chatt_login.css'>
+<link rel='stylesheet' type='text/css' href='./css/chatt_login.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,6 +32,6 @@
 		<input type='button' id='btn_nM' value='회원가입' onclick="newMem()"/>
 
 </div>
-<script type="text/javascript" src="../js/chatt_login.js"></script>
+<script type="text/javascript" src="./js/chatt_login.js"></script>
 </body>
 </html>

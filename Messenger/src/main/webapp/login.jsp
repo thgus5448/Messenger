@@ -10,11 +10,15 @@
 </head>
 <body>
 <div id="login">
-	<label>아이디 </label>
-		<input id="loginMid" type='text' name='loginMid' value="">
-	<label>암호 </label>
-		<input type='password' name='loginPwd'>
-		<input id="brn_login" type='submit' value='로그인' />
+	<form name="frm_form" method="post" action="">
+	
+			<label>아이디 </label>
+				<input id="loginMid" type='text' name='loginMid' value="">
+			<label>암호 </label>
+				<input type='password' name='loginPwd'>
+				<input id="brn_login" type='submit' value='로그인'>
+		
+	</form>
 </div>
 </body>
 </html>
