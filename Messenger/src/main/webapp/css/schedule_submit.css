@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+	border-radius: 5px;
+}
+
+body{
+	margin:0;
+}
+
+.chatt_submit{
+	width:350px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  border: none;
+}
+td{
+	font-size: 14px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	width:300px;
+	margin-bottom: 10px;
+	margin-top:10px;
+}
+
+.btn {
+  font-size: 14px;
+  border: none;
+  padding: 10px;
+  width: 150px;
+  background-color: #fa8258;
+  margin-bottom: 30px;
+  margin-top:20px;
+  color: white;
+  border-radius:20px;
+}
+
+th{
+	width:50px;
+	padding:5px;
+	font-size:15px;
+	text-align:center;
+}

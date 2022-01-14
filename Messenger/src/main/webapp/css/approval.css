@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{
+	text-align:center;
+	font-size:12px;
+}
+
+caption{
+	font-size:17px;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+table{
+	width:600px;
+	border:1px solid #444;
+	border-collapse:collapse;
+}
+
+th, td{
+	border:1px solid #444;
+	padding: 10px;
+}

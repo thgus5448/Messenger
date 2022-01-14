@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+	background-color: #f7f7f7;
+}
+
+#frm-signup {
+	width: 400px;
+	height: 500px;
+	padding: 20px;
+	padding-top: 50px;
+	margin: 20px auto;
+}
+
+#frm-signup h1 {
+	font-size: 35px;
+	margin-bottom: 20px;
+}
+
+#frm-signup .txt {
+	font-size: 14px;
+}
+
+.text-field {
+	font-size: 14px;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+
+#frm-signup #btn-signup {
+	width: 360px;
+	height: 48px;
+	margin-top: 30px;
+	border: none;
+	border-radius: 30px;
+	background-color: #fa8258;
+	color: #fff;
+}
+
+#frm-signup #btn-signup:hover {
+	cursor: pointer;
+}
+
+#frm-signup #signup-login {
+	width: 380px;
+	margin-top: 10px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+#frm-signup #signup-login label {
+	font-size: 15px;
+}
+
+#frm-signup #signup-login #btn-login {
+	background-color: #fff;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 2px solid black;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#frm-signup #signup-login #btn-login:hover {
+	cursor: pointer;
+}

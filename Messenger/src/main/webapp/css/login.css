@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+	background-color: #f7f7f7;
+}
+
+/* login.jsp */
+
+#frm-login {
+	width: 450px;
+	height: 440px;
+	padding: 20px;
+	padding-top: 50px;
+	margin: 20px auto;
+}
+
+#frm-login h1 {
+	font-size: 35px;
+}
+
+#frm-login #login-id{
+	height: 50px;
+	margin-top: 25px;
+	padding: 10px;
+	border-radius: 8px;
+	border: 2px solid #EAEBEB;
+}
+
+#frm-login #login-pwd{
+	height: 50px;
+	margin-top: 10px;
+	padding: 10px;
+	border-radius: 8px;
+	border: 2px solid #EAEBEB;
+}
+
+#frm-login #login-checkbox {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 3px;
+	width: 380px;
+	margin-top: 10px;
+}
+
+#frm-login #login-checkbox label {
+	font-size: 15px;
+}
+
+#frm-login #login-checkbox #find-pwd {
+	border: 0px solid #fff;
+	background-color: #f7f7f7;
+	color: #AEAEAE;
+	font-size: 15px;
+}
+
+#frm-login #login-checkbox #find-pwd:hover {
+	cursor: pointer;
+}
+
+#frm-login #btn-login {
+	width: 380px;
+	height: 48px;
+	margin-top: 30px;
+	border: none;
+	border-radius: 30px;
+	background-color: #fa8258;
+	color: #fff;
+}
+
+#frm-login #btn-login:hover {
+	cursor: pointer;
+}
+
+#frm-login #login-signup {
+	width: 380px;
+	margin-left: 3px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#frm-login #login-signup label {
+	font-size: 15px;
+}
+
+#frm-login #login-signup #btn-signup {
+	background-color: #fff;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 2px solid black;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#frm-login #login-signup #btn-signup:hover {
+	cursor: pointer;
+}	
+
+/* findPwd.jsp */
+
+#findPwd {
+	width: 350px;
+	height: 170px;
+	padding: 20px;
+	margin: 20px auto;
+}
+
+#findPwd h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+#findPwd #input-eamil {
+	height: 35px;
+	margin-top: 5px;
+	padding: 10px;
+	border: 2px solid #EAEBEB;
+	border-radius: 8px;
+}
+
+#findPwd #btn-findPwd-box {
+	display: flex;
+	width: 330px;
+	margin-top: 10px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+#findPwd #btn-findPwd-box #btn-findPwd {
+	width: 50px;
+	margin-left: auto;
+	margin-right: 10px;
+	padding: 5px;
+	background-color: #fa8258;
+	color: #fff;
+	border: none;
+	border-radius: 10px;	
+}
+
+#findPwd #btn-findPwd-box #btn-findPwd:hover {
+	cursor: pointer;
+}
+
+#findPwd #btn-findPwd-box #btn-findPwdCancel {
+	width: 50px;
+	margin-right: 10px;
+	padding: 5px;
+	background-color: #fff;
+	color: #888;
+	border: none;
+	border-radius: 5px;
+}
+
+#findPwd #btn-findPwd-box #btn-findPwdCancel:hover {
+	cursor: pointer;
+}
