@@ -5,6 +5,48 @@
 <head>
 <meta charset="UTF-8">
 <title>messege_detail.jsp</title>
+<style type="text/css">
+#messege_detail{
+	margin: 10px auto;
+}
+#btn_correct {
+	padding: 0 .75rem;
+  border-radius: 3px;
+  font-weight: 700;
+  vertical-align: text-bottom;
+  background-color: #fff;
+  color: #888;
+  border: 1px solid #DCDCDC;
+  cursor: pointer;
+  min-width: 2em;
+}
+#btn_delete {
+	padding: 0 .75rem;
+  border-radius: 3px;
+  font-weight: 700;
+  vertical-align: text-bottom;
+  background-color: #fff;
+  color: #888;
+  border: 1px solid #DCDCDC;
+  cursor: pointer;
+  min-width: 2em;
+  margin: 3px 0 0 3px;
+}
+#btn_Golist {
+	padding: 0 .75rem;
+  border-radius: 3px;
+  font-weight: 700;
+  vertical-align: text-bottom;
+ 	background-color: rgba(204,204,204,.8);
+  color: rgba(255,255,255,.8);
+  border-color: rgba(204,204,204,.8);
+  cursor: pointer;
+	min-width: 2em;
+	margin: 3px 0 0 3px;
+}
+
+</style>
+
 </head>
 <body>
 	<div id="messege_detail">
@@ -23,12 +65,12 @@
 			<input type="text" readonly="readonly" value="홍길동">
 			<br>
 			<textarea cols="80" rows="10" readonly="readonly">
-아버지를 아버지라고 부르지 못하는 슬픔 흑흑
+방가방가 나는 홍길동
 			</textarea>
 			<br>
-			<button type="button">수정</button>
-			<button type="button">삭제</button>
-			<button type="button">목록</button>
+			<button id="btn_correct" type="button">수정</button>
+			<button id="btn_delete" type="button">삭제</button>
+			<button id="btn_Golist" type="button">목록</button>
 		</form>
 	</div>
 </body>
