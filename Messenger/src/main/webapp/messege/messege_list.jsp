@@ -24,6 +24,9 @@
 	</script>
 <!-- css연결 -->
 	<style type="text/css">
+	* {
+		color: #444444;
+	}
 	.btn_white {
 		padding: 0 .75rem;
   	border-radius: 3px;
