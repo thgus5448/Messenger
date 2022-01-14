@@ -18,38 +18,48 @@
 	<form id="frm_messege_write" method="post" action="">
 		<h2>메시지 작성</h2>
 		<div id="labelZone">
-			<label>작성일자</label>
-			<br>
-			<label>작성자</label>
-			<br>
-			<label>수신자</label>
-			<br>
-			<label>제목</label>
+			<div>
+				<label>제목</label>
+			</div>
+			<div>
+				<label>작성자</label>
+			</div>
+			<div>
+				<label>작성일자</label>
+			</div>
+			<div>
+				<label>수신자</label>
+			</div>
 		</div>
 		
 		<div id="textZone">
-			<input type="text" readonly="readonly">
-			<br>
-			<input type="text" readonly="readonly">	
-			<br>
-			<select>
-				<option>전체</option>
-				<option>나에게</option>
-			</select>
-			<input type="search">
-			<button id="btn_search" type="button">찾기</button>
-			<br>
-			<input type="text">
+			<div>
+				<input type="text" size="45" maxlength="30" placeholder="공백포함 30자 이내" autofocus>
+			</div>
+			<div>
+				<input type="text" size="18" readonly>
+			</div>
+			<div>
+				<input type="date">
+			</div>
+			<div>	
+				<select>
+					<option>전체</option>
+					<option>나에게</option>
+				</select>
+				<input type="text" size="29" readonly>
+				<button id="btn_search" type="button">찾기</button>
+			</div>
 		</div>
 		
-		<textarea cols="68" rows="20" readonly="readonly"></textarea>
-		<br>
+		<div id='Board_insert_textarea'>
+			<textarea cols="57" rows="12" maxlength="500" placeholder="공백포함 500자 이내"></textarea>
+		</div>
 		
 		<div id="btnZone">
 			<button id="btn_write" type="button">작성</button>
 			<button id="btn_cancel"  type="button">취소</button>
 		</div>
-		
 	</form>
 </div>
 </body>

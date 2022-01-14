@@ -136,70 +136,92 @@ tr td:nth-child(5) { text-align: center; }
 #messege_write {
 	background-color: #fff;
 	width: 600px;
-	height: 100%;
-	margin: 10px auto;
-	border: 1px solid #7F7C82;
-	padding: 20px 20px 20px 20px;
-	font-size: 20px;
+	height: 615px;
+	margin: 0px auto;
+	padding: 40px;
+	border: 2px solid #EAEBEB;
+	border-radius: 10px;
 }
 
-h2 {
+#messege_write h2 {
+	margin-bottom: 10px;
 	text-align: center;
+	font-size: 25px;
 }
 
-#labelZone {
+#messege_write #labelZone {
+	display: inline-block;
 	text-align: left;
+}
+
+#messege_write #labelZone div {
+	margin-bottom: 7px;
+}
+
+#messege_write #textZone {
 	display: inline-block;
-	margin: 20px auto;
+	margin-left: 13px;
+	text-align: left;
 }
 
-#textZone {
-	text-align: right;
-	display: inline-block;
-	margin: 20px auto;
+#messege_write #textZone div {
+	margin-bottom: 5px;
 }
 
-input[type=text] {
-	width: 400px;
+#messege_write #textZone div input[type=date] {
+	width: 203px;
 }
 
-#btnZone {
+#messege_write #textZone div select{
+	font-size: 16.5px;
+}
+
+#messege_write #textZone div select option{
+	font-size: 16.5px;
+}
+
+#messege_write #textZone #btn_search {
+	font-size: 15px;
+	width: 50px;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;	
+}
+
+#messege_write #Board_insert_textarea {
+	margin-top: 5px;
+}
+
+#messege_write #Board_insert_textarea textarea{
+  box-sizing: border-box;
+ 	padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  resize: none;
+}
+
+#messege_write #btnZone {
 	text-align: center;
 	margin: 10px;
 }
 
-#btn_write {
-	padding: 0 .75rem;
-	border-radius: 3px;
-	font-weight: 700;
-	vertical-align: text-bottom;
-	background-color: #fff;
-	color: #888;
-	border: 1px solid #DCDCDC;
-	cursor: pointer;
-	min-width: 2em;
+#messege_write #btnZone #btn_write {
+	width: 70px;
+	margin-left: auto;
+	margin-right: 10px;
+	padding: 5px;
+	background-color: #fa8258;
+	color: #fff;
+	border: none;
+	border-radius: 10px;	
 }
 
-#btn_cancel {
-	padding: 0 .75rem;
-	border-radius: 3px;
-	font-weight: 700;
-	vertical-align: text-bottom;
-	background-color: #fff;
+#messege_write #btnZone #btn_cancel {
+	width: 70px;
+	margin-right: 10px;
+	padding: 5px;
+	background-color: #d7d7d7;
+	border: none;
+	border-radius: 10px;
 	color: #888;
-	border: 1px solid #DCDCDC;
-	cursor: pointer;
-	min-width: 2em;
-}
-
-#btn_search {
-	padding: 0 .75rem;
-	border-radius: 3px;
-	font-weight: 700;
-	vertical-align: text-bottom;
-	background-color: #fff;
-	color: #888;
-	border: 1px solid #DCDCDC;
-	cursor: pointer;
-	min-width: 2em;
 }
