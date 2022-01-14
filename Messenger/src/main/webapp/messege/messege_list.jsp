@@ -64,7 +64,7 @@
     border-radius: 3px;
     margin: 3px 0 0 3px;
     min-width: 12.5vw;
-    border: none;
+    border: 1px solid #FFAB76;
     vertical-align: text-bottom;
 }
 	#th_no {
@@ -78,14 +78,14 @@
 		width: 300px;
 	}
 	table {
-		border: 2px solid #ccc;
+		border: 1px solid #ccc;
 		border-collapse: collapse;
 		margin-top: 10px;
 		margin-bottom: 20px;
 		color: #444444;
 	}
 	th, td {
-		border: 2px solid #000;
+		border: 1px solid #000;
     width: 100px;
     height: 30px;
 	  border: 2px solid #ccc;
@@ -131,10 +131,12 @@
 			</tr>
 		</table>
 		
-		<button type="button" class="btn_borderNone">처음</button>
-		<button type="button" class="btn_borderNone">이전</button>
-		<button type="button" class="btn_borderNone">다음</button>
-		<button type="button" class="btn_borderNone">취소</button>
+		<div id="btn_zone">
+			<button type="button" class="btn_borderNone">처음</button>
+			<button type="button" class="btn_borderNone">이전</button>
+			<button type="button" class="btn_borderNone">다음</button>
+			<button type="button" class="btn_borderNone">취소</button>
+		</div>
 	</form>
 </div>
 </body>

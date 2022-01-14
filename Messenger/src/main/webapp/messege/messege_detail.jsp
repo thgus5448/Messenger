@@ -37,9 +37,9 @@
   border-radius: 3px;
   font-weight: 700;
   vertical-align: text-bottom;
- 	background-color: rgba(204,204,204,.8);
-  color: rgba(255,255,255,.8);
-  border-color: rgba(204,204,204,.8);
+ 	background-color: #FA8258;
+  color: #fff;
+	border: 1px solid #FFAB76;
   cursor: pointer;
 	min-width: 2em;
 	margin: 3px 0 0 3px;
