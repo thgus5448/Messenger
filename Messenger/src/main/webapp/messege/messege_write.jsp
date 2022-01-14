@@ -70,6 +70,12 @@ input[type=text]{
   cursor: pointer;
   min-width: 2em;
 }
+select {
+	width: 92px;
+}
+input[type=search] {
+	width: 250px;
+}
 
 </style>
 </head>
