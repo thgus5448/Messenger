@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 20px;
+}
+
+body {
+	background-color: #f7f7f7;
+}
+
+/* boardList.jsp */
+#board_list {
+	margin-top: 20px;
+}
+
+#board_list h2 {
+	font-size: 30px;
+}
+
+#board_list #search-box {
+	width: 90%;
+	margin: 10px auto;
+	text-align: right;
+}
+
+#board_list #search-box select, input{
+	margin-right: 5px;
+	font-size: 16px;
+}
+
+#board_list #search-box select option{
+	font-size: 16px;
+}
+
+#board_list #search-box button{
+	display: inline-block;
+	font-size: 15px;
+	padding: 3px 5px;
+	color: #333;
+	font-size: 18px;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+}
+
+#board_list #search-box button:hover {
+	cursor: pointer;
+}
+
+/* 게시판 테이블 */
+table {
+	width: 90%;
+	margin: 40px auto 10px;
+	margin-top: 20px;
+	border-collapse: collapse;
+}
+
+th {
+	background-color: #fa8258;
+	color: #fff;
+}
+
+td, th {
+	border: 1px solid #dbdbdb;
+	padding: 5px 20px;
+	font-size: 15px;
+}
+
+td:hover {
+	cursor: pointer
+}
+
+tr:nth-of-type(odd) {
+	background: #eee;
+}
+
+/* 컬럼의 너비 */
+.no { width: 5%; }
+.division { width: 15% }
+.title { width: 50%; }
+.writer { width: 15%; }
+
+/* 컬럼의 정렬 */
+tr td:nth-child(1) { text-align: center; }
+tr td:nth-child(2) { text-align: center; }
+tr td:nth-child(3) { text-align: left; }
+tr td:nth-child(4) { text-align: center; }
+tr td:nth-child(5) { text-align: center; }
+
+/* 페이징 버튼 */
+#page-box {
+	width: 80%;
+	margin: 5px auto;
+	height: 30px;
+	text-align: center;
+}
+
+#page-box button {
+	display: inline-block;
+	margin-right: 3px;
+	padding: 3px 5px;
+	color: #333;
+	font-size: 18px;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+}
+
+#page-box button:hover {
+	cursor: pointer;
+}
+
+#insert-box {
+	width: 90%;
+	margin: 5px auto;
+	text-align: right;
+}
+
+#insert-box #btn-insert {
+	display: inline-block;
+	margin-right: 3px;
+	padding: 3px 5px;
+	color: #333;
+	font-size: 18px;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+}
+
+#insert-box #btn-insert:hover {
+	cursor: pointer;
+}
+
+/* boardInsert.jsp */
+#messege_write {
+	background-color: #fff;
+	width: 600px;
+	height: 100%;
+	margin: 10px auto;
+	border: 1px solid #7F7C82;
+	padding: 20px 20px 20px 20px;
+	font-size: 20px;
+}
+
+h2 {
+	text-align: center;
+}
+
+#labelZone {
+	text-align: left;
+	display: inline-block;
+	margin: 20px auto;
+}
+
+#textZone {
+	text-align: right;
+	display: inline-block;
+	margin: 20px auto;
+}
+
+input[type=text] {
+	width: 400px;
+}
+
+#btnZone {
+	text-align: center;
+	margin: 10px;
+}
+
+#btn_write {
+	padding: 0 .75rem;
+	border-radius: 3px;
+	font-weight: 700;
+	vertical-align: text-bottom;
+	background-color: #fff;
+	color: #888;
+	border: 1px solid #DCDCDC;
+	cursor: pointer;
+	min-width: 2em;
+}
+
+#btn_cancel {
+	padding: 0 .75rem;
+	border-radius: 3px;
+	font-weight: 700;
+	vertical-align: text-bottom;
+	background-color: #fff;
+	color: #888;
+	border: 1px solid #DCDCDC;
+	cursor: pointer;
+	min-width: 2em;
+}
+
+#btn_search {
+	padding: 0 .75rem;
+	border-radius: 3px;
+	font-weight: 700;
+	vertical-align: text-bottom;
+	background-color: #fff;
+	color: #888;
+	border: 1px solid #DCDCDC;
+	cursor: pointer;
+	min-width: 2em;
+}

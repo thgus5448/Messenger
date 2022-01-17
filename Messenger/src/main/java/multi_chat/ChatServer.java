@@ -32,7 +32,7 @@ public class ChatServer extends HttpServlet {
 			}
 		}
 	}
-  
+    
 	@OnOpen
 	public void onOpen(Session session) throws IOException {
 		System.out.println(session);
