@@ -1,0 +1,113 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 20px;
+}
+body {
+	background-color: #f7f7f7;
+}
+#approval_List {
+	margin-top: 20px;
+}
+#approval_List h2 {
+	font-size: 30px;
+}
+#approval_List #search-box {
+	width: 90%;
+	margin: 10px auto;
+	text-align: right;
+}
+#approval_List #search-box select, input{
+	margin-right: 5px;
+	font-size: 16px;
+}
+#approval_List #search-box select option{
+	font-size: 16px;
+}
+#approval_List #search-box button{
+	display: inline-block;
+	font-size: 15px;
+	padding: 3px 5px;
+	color: #333;
+	font-size: 18px;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+}
+#approval_List #search-box button:hover {
+	cursor: pointer;
+}
+/*게시판 테이븖*/
+table {
+	width: 90%;
+	margin: 40px auto 10px;
+	margin-top: 20px;
+	border-collapse: collapse;
+}
+th {
+	background-color: #fa8258;
+	color: #fff;
+}
+td, th {
+	border: 1px solid #dbdbdb;
+	padding: 5px 20px;
+	font-size: 15px;
+}
+td:hover {
+	cursor: pointer
+}
+tr:nth-of-type(odd) {
+	background: #eee;
+}
+
+/* 컬럼의 너비 */
+.no { width: 5%; }
+.division { width: 10% }
+.title { width: 35%; }
+.writer { width: 15%; }
+.date{ width: 20% }
+
+/* 컬럼의 정렬 */
+tr td:nth-child(1) { text-align: center; }
+tr td:nth-child(2) { text-align: center; }
+tr td:nth-child(3) { text-align: left; }
+tr td:nth-child(4) { text-align: center; }
+tr td:nth-child(5) { text-align: center; }
+
+/* 페이징 버튼 */
+#page-box {
+	width: 80%;
+	margin: 5px auto;
+	height: 30px;
+	text-align: center;
+}
+
+#page-box button {
+	display: inline-block;
+	margin-right: 3px;
+	padding: 3px 5px;
+	color: #333;
+	font-size: 18px;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+}
+#page-box button:hover {
+	cursor: pointer;
+}
+
+#insert-box {
+	width: 90%;
+	margin: 5px auto;
+	text-align: right;
+}
+#insert-box #btn-insert {
+	display: inline-block;
+	margin-right: 3px;
+	padding: 3px 5px;
+	color: #333;
+	font-size: 18px;
+	border: 1px solid #dbdbdb;
+	border-radius: 10px;
+}
