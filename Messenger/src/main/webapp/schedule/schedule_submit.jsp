@@ -12,34 +12,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../js/main.js"></script>
 </head>
-<script>
-$(function(){
-	$('#pdate').datepicker({
-		changeMonth:true,
-		changeYear: true
-	});
-});
-</script>
 <body>
-<div class='chatt_submit'>
-	<h1>일정 등록</h1>
+<div id='schedule_submit'>
+	<h3>일정 등록</h3>
 	<form name='frm' method='post' action=''>
-		<table>
-			<tr>
-				<th width='20%'>날짜</th>
-				<td width='80%'><input type='text' name='pdate' id='pdate' style='width:98%'></td>
-			</tr>
-			<tr>
-				<th>일정</th>
-				<td><input type='text' name='title' style='width:98%'></td>
-			</tr>
-		</table>
-		<div>
-			<button type='button' class='btn'>등록</button>
-			<button type='button' class='btn' onclick='self.close();'>닫기</button>		
+		<label>날짜와 일정을 입력해주세요</label>
+		<div id='schedule-insertBox'>
+			<label>날짜 </label>
+			<input type="date" name='inputDate' id='inputDate'>
+			<br/>
+			<label>일정 </label>
+			<input type='text' name='inputDateSchedule' id='inputDateSchedule'>
+		</div>
+		<div id='btn-scheduleInsert-box'>
+			<button type='button' id='btn-scheduleInsert'>등록</button>
+			<button type='button' id='btn-scheduleCancel' onclick="window.close()">닫기</button>		
 		</div>
 	</form>
-</div>n
+</div>
 </body>
 </html>

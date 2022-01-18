@@ -19,6 +19,7 @@ body {
 
 #board_list h2 {
 	font-size: 30px;
+	text-align: center;
 }
 
 #board_list #search-box {
@@ -118,7 +119,7 @@ tr td:nth-child(5) { text-align: center; }
 	text-align: right;
 }
 
-#insert-box #btn-insert {
+#insert-box #board-btn-insert {
 	display: inline-block;
 	margin-right: 3px;
 	padding: 3px 5px;
@@ -128,7 +129,7 @@ tr td:nth-child(5) { text-align: center; }
 	border-radius: 10px;
 }
 
-#insert-box #btn-insert:hover {
+#insert-box #board-btn-insert:hover {
 	cursor: pointer;
 }
 

@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="../js/main.js"></script>
 </head>
 <body>
 <div class='calender'>
@@ -23,9 +24,9 @@
 		</div> 
 		<button class="nextBtn" onclick="nextCal()">next</button>
 	</div>
-	<div class=btn>
-		<button class="btnSubmit" onclick="submit()">등록</button>
-		<button class="btnDelete" onclick="delete()">삭제</button>
+	<div class="btn">
+		<button id="schedule-btn-insert" class="btnSubmit">등록</button>
+		<button id="schedule-btn-delete" class="btnDelete">삭제</button>
 	</div>
 		
 	<div class="main"> 

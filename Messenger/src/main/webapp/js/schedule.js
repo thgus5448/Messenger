@@ -50,8 +50,3 @@ function nextCal(){
 	CDate.setMonth(CDate.getMonth()+1);
 	buildCalender();
 }
-
-function submit(){
-	var url = "../schedule/schedule_submit.jsp";
-	window.open(url, "width=400, height=300, left=100")
-}

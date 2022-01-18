@@ -32,7 +32,7 @@
 	</form>
 	<div id='signup-login'>
 		<label>이미 가입하셨나요?</label>
-		<input type='button' id='btn-login' value='로그인'/>
+		<input type='button' id='btn-loginPage' value='로그인'/>
 	</div>
 </div>
 </body>

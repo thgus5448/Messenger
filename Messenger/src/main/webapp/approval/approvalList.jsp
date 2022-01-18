@@ -1,56 +1,125 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>게시글 목록 | Coconut</title>
-<link rel='stylesheet' type='text/css' href='../css/board_layout.css'>
+<title>결재 목록</title>
+<link rel='stylesheet' type='text/css' href='../css/approval.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="../js/main.js"></script>
 </head>
 <body>
-<table>
-	<caption>
-		<div>게시판 목록</div>
-		<div style="width:50%; text-align:left; font-size:10px; float:left;">
-			<br>전체 메시지 개수 : 총 7개
-		</div>
-		<div style="width:50%; text-align:right; margin-top:5px; float:left;">
-			<button type='button' onclick="location='boardWrite.jsp' ">글쓰기</button>
-		</div>
-	</caption>
-	<colgroup>
-		<col width="10%"/>
-		<col width="50%"/>
-		<col width="10%"/>
-		<col width="15%"/>
-		<col width="15%"/>
-	</colgroup>
-	<thead>
-		<tr>
-			<th>번호</th>
-			<th>제목</th>
-			<th>종류</th>
-			<th>이름</th>
-			<th>날짜</th>
-		</tr>
-	</thead>
-	<tbody>
+	<div id="approval_List">
+		<h2>결재 목록</h2>
+		<div id='search-box'>
+			<select>
+				<option>전체</option>
+				<option>결재중</option>
+				<option>반려</option>
+				<option>결재완료</option>
+			</select> 
+			<button>조회</button>
+		</div>	
+		
+		<table>
 			<tr>
-				<td>no</td>
-				<td align="left">
-					<a href="boardDetail.jsp">ㅎ</a>
-				</td>
-				<td>결재</td>
-				<td>이름</td>
-				<td>날짜</td>
+				<th class="no">NO</th>
+				<th class="title">제목</th>
+				<th class="writer">기안자</th>
+				<th class="date">기안일</th>
+				<th class="status">결재상태</th>
+				<th class="documentNumber">문서번호</th>
 			</tr>
-
-	</tbody>
-</table>
-<!-- 페이징 처리 -->
-<div style="width:600px; text-align:center; margin-top:10px;">
-
-</div>
+			<tr>
+				<td>1</td>
+				<td>결재8</td>
+				<td>일남</td>
+				<td>2022-01-16</td>
+				<td>결재중</td>
+				<td>GIT그룹-2022-00009</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>결재7</td>
+				<td>이발소</td>
+				<td>2022-01-16</td>
+				<td>결재중</td>
+				<td>GIT그룹-2022-00008</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>결재6</td>
+				<td>삼계탕</td>
+				<td>2022-01-16</td>
+				<td>반려</td>
+				<td>GIT그룹-2022-00007</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>결재5</td>
+				<td>사팔뜨기</td>
+				<td>2022-01-16</td>
+				<td>반려</td>
+				<td>GIT그룹-2022-00006</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>결재4</td>
+				<td>오징어</td>
+				<td>2022-01-16</td>
+				<td>결재완료</td>
+				<td>GIT그룹-2022-00005</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>결재3</td>
+				<td>육개장</td>
+				<td>2022-01-16</td>
+				<td>결재완료</td>
+				<td>GIT그룹-2022-00004</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>결재3</td>
+				<td>칠칠이</td>
+				<td>2022-01-16</td>
+				<td>결재완료</td>
+				<td>GIT그룹-2022-00003</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>결재2</td>
+				<td>팔보채</td>
+				<td>2022-01-16</td>
+				<td>결재완료</td>
+				<td>GIT그룹-2022-00002</td>
+			</tr>
+				<tr>
+				<td>8</td>
+				<td>결재1</td>
+				<td>구기자</td>
+				<td>2022-01-16</td>
+				<td>결재완료</td>
+				<td>GIT그룹-2022-00001</td>
+			</tr>
+		</table>
+		
+		<div id='insert-box'>
+				<button type="button" id="approval-btn-insert">결재 작성하기</button>
+		</div>
+		
+		<div id='page-box'>
+				<button type="button">맨처음</button>
+				<button type="button">이전</button>
+				<button type="button">다음</button>
+				<button type="button">맨끝</button>
+			</div>
+	</div>
 </body>
 </html>

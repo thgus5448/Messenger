@@ -1,48 +1,83 @@
 @charset "UTF-8";
 
-*{
+* {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Noto Sans KR', sans-serif;
-	border-radius: 5px;
 }
 
-body{
-	margin:0;
+body {
+	background-color: #f7f7f7;
 }
 
-.chatt_submit{
-	width:350px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 50px;
-  padding: 20px;
-  text-align: center;
-  border: none;
+#schedule_submit {
+	width: 350px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px;
+	border: none;
 }
-td{
-	font-size: 14px;
-	padding: 10px;
-	border: 1px solid #ccc;
-	width:300px;
+
+#schedule_submit h3 {
+	font-size: 20px;
 	margin-bottom: 10px;
-	margin-top:10px;
 }
 
-.btn {
-  font-size: 14px;
-  border: none;
-  padding: 10px;
-  width: 150px;
-  background-color: #fa8258;
-  margin-bottom: 30px;
-  margin-top:20px;
-  color: white;
-  border-radius:20px;
+#schedule_submit th {
+	width: 50px;
+	padding: 5px;
+	font-size: 15px;
+	text-align: center;
 }
 
-th{
-	width:50px;
-	padding:5px;
-	font-size:15px;
-	text-align:center;
+#schedule_submit #schedule-insertBox {
+	margin-top: 10px;
+}
+
+#schedule_submit #schedule-insertBox input{
+	width: 270px;
+	height: 35px;
+	margin-top: 5px;
+	padding: 10px;
+	border: 2px solid #EAEBEB;
+	border-radius: 8px;
+}
+
+#schedule_submit #btn-scheduleInsert-box {
+	width: 330px;
+	margin-top: 20px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+#schedule_submit #btn-scheduleInsert-box #btn-scheduleInsert {
+	width: 80px;
+	margin-left: auto;
+	margin-right: 10px;
+	padding: 5px;
+	background-color: #fa8258;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	font-size: 15px;
+}
+
+#schedule_submit #btn-scheduleInsert-box #btn-scheduleInsert:hover {
+	cursor: pointer;
+}
+
+#schedule_submit #btn-scheduleInsert-box #btn-scheduleCancel {
+	width: 80px;
+	margin-right: 10px;
+	padding: 5px;
+	background-color: #fff;
+	color: #888;
+	border: none;
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+#schedule_submit #btn-scheduleInsert-box #btn-scheduleCancel:hover {
+	cursor: pointer;
 }
