@@ -62,7 +62,7 @@ body {
 	font-size: 15px;
 }
 
-#frm-signup #signup-login #btn-login {
+#frm-signup #signup-login #btn-loginPage {
 	background-color: #fff;
 	border-top: 0px;
 	border-left: 0px;
@@ -72,6 +72,6 @@ body {
 	font-weight: bold;
 }
 
-#frm-signup #signup-login #btn-login:hover {
+#frm-signup #signup-login #btn-loginPage:hover {
 	cursor: pointer;
 }

@@ -15,7 +15,7 @@
 </head>
 <body>
 	<div id="board_list">
-		<h2>게시판</h2>
+		<h2>게시판 목록</h2>
 		<div id='search-box'>
 			<select>
 				<option>작성자</option>
@@ -105,7 +105,7 @@
 				</tr>
 			</table>
 			<div id='insert-box'>
-				<button type="button" id="btn-insert">글쓰기</button>
+				<button type="button" id="board-btn-insert">글쓰기</button>
 			</div>
 			<div id='page-box'>
 				<button type="button">맨처음</button>

@@ -10,6 +10,10 @@ $(function(){
 	$('#btn-signup').click(() => {
 		location.href = 'index.jsp?sub=./login/signUpTerms.jsp';
 	});
+	
+	$('#btn-loginPage').click(() => {
+		location.href = 'index.jsp?sub=./login/login.jsp';
+	});
 
 	$('#find-pwd').click(() => {
 		window.open('./login/findPwd.jsp', '비밀번호 찾기', 'width=400, top=250, left=600, height=200,location=no, status=no ,scrollbars=no, resizable=no');
